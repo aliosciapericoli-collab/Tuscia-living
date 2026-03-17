@@ -30,10 +30,10 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
-    .hero-gradient { background: linear-gradient(135deg, rgba(33,57,48,0.4) 0%, rgba(54,105,85,0.3) 100%); transition: opacity 0.6s ease; }
-    .hero-section:hover .hero-gradient { opacity: 0.15; }
-    .hero-section .hero-img { transition: filter 0.6s ease, transform 0.6s ease; filter: brightness(0.7); }
-    .hero-section:hover .hero-img { filter: brightness(1) contrast(1.1); transform: scale(1.02); }
+    .hero-gradient { background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%) !important; transition: opacity 0.6s ease; }
+    .hero-section:hover .hero-gradient { opacity: 0; }
+    .hero-section .hero-img { transition: filter 0.6s ease, transform 0.6s ease; filter: brightness(0.9); }
+    .hero-section:hover .hero-img { filter: brightness(1) contrast(1.05); transform: scale(1.02); }
     .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
     .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
     .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
