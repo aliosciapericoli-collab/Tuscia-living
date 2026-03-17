@@ -597,6 +597,12 @@
     </div>
   </footer>
 
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center cursor-pointer" onclick="this.classList.add('hidden');this.classList.remove('flex');">
+    <button class="absolute top-6 right-6 text-white text-4xl font-light hover:text-gray-300 z-[101]">&times;</button>
+    <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl">
+  </div>
+
   <!-- JavaScript -->
   <script>
     // Mobile menu
@@ -609,6 +615,17 @@
     });
     // Initialize Lucide icons
     lucide.createIcons();
+    // Lightbox for gallery
+    document.querySelectorAll('#gallery a').forEach(a => {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const img = this.querySelector('img');
+        const lb = document.getElementById('lightbox');
+        document.getElementById('lightbox-img').src = img.src;
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+      });
+    });
     // Fade in on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
