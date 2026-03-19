@@ -4,13 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tuscia Living — Il Primo Long Stay Hotel per Senior Attivi</title>
-  <meta name="description" content="Il primo Long Stay Hotel in Italia per senior attivi. Nel cuore medievale della Tuscia, Viterbo.">
+  <meta name="description" content="Tuscia Living: il primo Long Stay Hotel per senior attivi in Italia. Camere arredate, pasti, attività e assistenza inclusi. A Viterbo, nel cuore della Tuscia. Da €2.000/mese.">
   <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="canonical" href="https://www.tuscialiving.it/">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tuscialiving.it/">
+  <meta property="og:title" content="Tuscia Living — Il Primo Long Stay Hotel per Senior Attivi">
+  <meta property="og:description" content="Tuscia Living: il primo Long Stay Hotel per senior attivi in Italia. Camere arredate, pasti, attività e assistenza inclusi. A Viterbo, nel cuore della Tuscia. Da €2.000/mese.">
+  <meta property="og:image" content="https://www.tuscialiving.it/assets/og-image.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Tuscia Living">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tuscia Living — Il Primo Long Stay Hotel per Senior Attivi">
+  <meta name="twitter:description" content="Il primo Long Stay Hotel per senior attivi in Italia. Nel cuore medievale della Tuscia, Viterbo. Da €2.000/mese, tutto incluso.">
+  <meta name="twitter:image" content="https://www.tuscialiving.it/assets/og-image.jpg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.451.0/lucide.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LodgingBusiness",
+        "name": "Tuscia Living — Residenza Nazareth",
+        "description": "Il primo Long Stay Hotel per senior attivi in Italia. Camere arredate, pasti, attività culturali e assistenza nel cuore medievale di Viterbo.",
+        "url": "https://www.tuscialiving.it",
+        "telephone": "+390761264612",
+        "email": "info@tuscialiving.it",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via San Tommaso 26/30",
+          "addressLocality": "Viterbo",
+          "postalCode": "01100",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.4176,
+          "longitude": 12.1069
+        },
+        "image": "https://www.tuscialiving.it/assets/og-image.jpg",
+        "priceRange": "€€",
+        "checkinTime": "15:00",
+        "checkoutTime": "11:00",
+        "amenityFeature": [
+          {"@type": "LocationFeatureSpecification", "name": "Pasti inclusi", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Attività culturali", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Assistenza medica", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto costa vivere a Tuscia Living?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Le tariffe partono da €2.000/mese (formula Tuscia Home per soggiorni 6-12 mesi). La formula Winter Resident parte da €2.250/mese (1-6 mesi). Sono disponibili tariffe Founding Member bloccate a vita per i primi iscritti. Il soggiorno breve Tuscia Discovery è disponibile a €100/giorno."}
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa è incluso nella tariffa mensile?",
+            "acceptedAnswer": {"@type": "Answer", "text": "La tariffa mensile include: camera arredata con bagno privato, tre pasti al giorno, pulizie e cambio biancheria, Wi-Fi, tutte le attività culturali e ricreative, assistenza di base e reception H24."}
+          },
+          {
+            "@type": "Question",
+            "name": "Tuscia Living è una casa di riposo o RSA?",
+            "acceptedAnswer": {"@type": "Answer", "text": "No. Tuscia Living è un Long Stay Hotel per senior autonomi e attivi. Non è una RSA, non è una casa di riposo. Gli ospiti sono clienti di un hotel, con piena autonomia e libertà. Il modello è quello dell'ospitalità alberghiera residenziale."}
+          },
+          {
+            "@type": "Question",
+            "name": "Dove si trova Tuscia Living?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Tuscia Living - Residenza Nazareth si trova in Via San Tommaso 26/30, nel centro storico medievale di Viterbo, in Toscana meridionale (Lazio settentrionale). A 100km da Roma, raggiungibile in treno o auto."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <script>
     tailwind.config = {
       theme: {
@@ -48,7 +125,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20 sm:h-28 md:h-36 lg:h-48 py-2">
         <a href="#" class="flex items-center space-x-2">
-          <img src="assets/logo-v2.png" alt="Tuscia Living" class="h-16 sm:h-24 md:h-32 lg:h-44 w-auto">
+          <img loading="lazy" src="assets/logo-v2.png" alt="Tuscia Living" class="h-16 sm:h-24 md:h-32 lg:h-44 w-auto">
         </a>
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
           <a href="#concetto" class="text-gray-600 hover:text-accent-600 transition">Il Concetto</a>
@@ -82,7 +159,7 @@
   <!-- HERO -->
   <section class="relative min-h-screen flex items-center hero-section overflow-hidden">
     <div class="absolute inset-0">
-      <img src="assets/hero-facciata.png" alt="Residenza Nazareth - Tuscia Living" class="w-full h-full object-cover hero-img">
+      <img loading="lazy" src="assets/hero-facciata.png" alt="Residenza Nazareth - Tuscia Living" class="w-full h-full object-cover hero-img">
       <div class="hero-gradient absolute inset-0"></div>
     </div>
 
@@ -284,72 +361,72 @@
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 fade-in">
         <!-- IMMOBILE: Ingresso Storico, Facciata, Lounge, Ristorante -->
         <a href="assets/gallery-ingresso-storico.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-ingresso-storico.png" alt="Ingresso Storico" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-ingresso-storico.png" alt="Ingresso Storico" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Ingresso Storico</span></div>
         </a>
         <a href="assets/gallery-facciata.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-facciata.png" alt="Facciata" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-facciata.png" alt="Facciata" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Facciata</span></div>
         </a>
         <a href="assets/gallery-ingresso.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-ingresso.png" alt="Reception" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-ingresso.png" alt="Reception" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Reception</span></div>
         </a>
         <a href="assets/gallery-lounge.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-lounge.png" alt="Lounge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-lounge.png" alt="Lounge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Lounge</span></div>
         </a>
         <!-- CAPPELLA / CHIESA -->
         <a href="assets/gallery-cappella1.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-cappella1.png" alt="Cappella" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-cappella1.png" alt="Cappella" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Cappella</span></div>
         </a>
         <a href="assets/gallery-cappella2.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-cappella2.png" alt="Chiesa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-cappella2.png" alt="Chiesa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Chiesa</span></div>
         </a>
         <!-- SALA CINEMA / CONFERENZE -->
         <a href="assets/gallery-cinema.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-cinema.png" alt="Sala Cinema" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-cinema.png" alt="Sala Cinema" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Sala Cinema</span></div>
         </a>
         <a href="assets/gallery-sala-meeting.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-sala-meeting.png" alt="Sala Conferenze" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-sala-meeting.png" alt="Sala Conferenze" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Sala Conferenze</span></div>
         </a>
         <!-- RISTORANTE / SALOTTINO -->
         <a href="assets/gallery-ristorante.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-ristorante.png" alt="Ristorante" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-ristorante.png" alt="Ristorante" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Ristorante</span></div>
         </a>
         <a href="assets/gallery-salottino.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-salottino.png" alt="Salottino" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-salottino.png" alt="Salottino" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Salottino</span></div>
         </a>
         <!-- CAMERE -->
         <a href="assets/gallery-camera1.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-camera1.png" alt="Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-camera1.png" alt="Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Camera</span></div>
         </a>
         <a href="assets/gallery-camera3.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-camera3.png" alt="Camera Suite" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-camera3.png" alt="Camera Suite" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Camera Suite</span></div>
         </a>
         <a href="assets/gallery-camera2.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-camera2.png" alt="Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-camera2.png" alt="Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Camera</span></div>
         </a>
         <a href="assets/gallery-camera4.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-camera4.png" alt="Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-camera4.png" alt="Camera" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Camera</span></div>
         </a>
         <!-- BAGNI -->
         <a href="assets/gallery-bagno1.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-bagno1.png" alt="Bagno" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-bagno1.png" alt="Bagno" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Bagno</span></div>
         </a>
         <a href="assets/gallery-bagno2.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img src="assets/gallery-bagno2.png" alt="Bagno" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-bagno2.png" alt="Bagno" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Bagno</span></div>
         </a>
       </div>
@@ -365,42 +442,42 @@
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img src="assets/ginnastica-dolce.jpg" alt="Ginnastica dolce" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/ginnastica-dolce.jpg" alt="Ginnastica dolce" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Ginnastica dolce</h3>
             <p class="text-gray-500 text-sm mt-1">2 volte a settimana</p>
           </div>
         </div>
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img src="assets/passeggiata-viterbo.jpg" alt="Escursioni" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/passeggiata-viterbo.jpg" alt="Escursioni" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Escursioni</h3>
             <p class="text-gray-500 text-sm mt-1">Borghi e terme</p>
           </div>
         </div>
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img src="assets/sala-cinema.png" alt="Sala Cinema" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/sala-cinema.png" alt="Sala Cinema" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Serate cinema/musica</h3>
             <p class="text-gray-500 text-sm mt-1">E giochi di società</p>
           </div>
         </div>
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img src="assets/aperitivo-bar.jpg" alt="Aperitivo" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/aperitivo-bar.jpg" alt="Aperitivo" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Aperitivo sociale</h3>
             <p class="text-gray-500 text-sm mt-1">Ogni venerdì sera</p>
           </div>
         </div>
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img src="assets/colazione-km0.jpg" alt="Colazione km 0" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/colazione-km0.jpg" alt="Colazione km 0" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Colazione km 0</h3>
             <p class="text-gray-500 text-sm mt-1">Prodotti freschi e locali ogni mattina</p>
           </div>
         </div>
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img src="assets/corsi-cucina.jpg" alt="Corsi cucina" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/corsi-cucina.jpg" alt="Corsi cucina" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Corsi cucina/arte</h3>
             <p class="text-gray-500 text-sm mt-1">E lingue straniere</p>
@@ -523,20 +600,20 @@
             <h3 class="font-serif text-xl font-bold text-accent-800 mb-6">Richiedi informazioni</h3>
             <div class="space-y-4">
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Nome e Cognome</label>
-                <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none">
+                <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome e Cognome</label>
+                <input id="nome" type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none">
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input id="email" type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none">
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Telefono</label>
-                <input type="tel" name="phone" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none">
+                <label for="telefono" class="block text-sm font-medium text-gray-700 mb-1">Telefono</label>
+                <input id="telefono" type="tel" name="phone" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none">
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Messaggio</label>
-                <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none"></textarea>
+                <label for="messaggio" class="block text-sm font-medium text-gray-700 mb-1">Messaggio</label>
+                <textarea id="messaggio" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none"></textarea>
               </div>
               <input type="hidden" name="_subject" value="Nuova richiesta da Tuscia Living">
               <input type="hidden" name="_captcha" value="false">
@@ -554,7 +631,7 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <img src="assets/logo.png" alt="Tuscia Living" class="h-12 brightness-0 invert">
+            <img loading="lazy" src="assets/logo.png" alt="Tuscia Living" class="h-12 brightness-0 invert">
             <span class="font-serif text-xl font-bold">Tuscia Living</span>
           </div>
           <p class="text-gray-400 text-sm">Il primo Long Stay Hotel per senior attivi in Italia. Residenza Nazareth, Viterbo.</p>
@@ -585,7 +662,7 @@
   <!-- Lightbox -->
   <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center cursor-pointer" onclick="this.classList.add('hidden');this.classList.remove('flex');">
     <button class="absolute top-6 right-6 text-white text-4xl font-light hover:text-gray-300 z-[101]">&times;</button>
-    <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl">
+    <img loading="lazy" id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl">
   </div>
 
   <!-- JavaScript -->
