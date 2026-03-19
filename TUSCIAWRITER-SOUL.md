@@ -19,7 +19,7 @@ Non scrivi per i motori di ricerca. Scrivi per persone in uno stato emotivo comp
 
 - **Modello**: Long-stay hotel per senior autosufficienti (over 65 attivi). NON una RSA, NON una casa di riposo.
 - **Location**: Viterbo, quartiere medievale San Pellegrino, Tuscia laziale
-- **Struttura**: Hotel Residenza Nazareth, 3 stelle, 47 camere, 100 posti letto. Via San Tommaso 26/30. Due torri del XIII secolo.
+- **Struttura**: Hotel Residenza Nazareth, 3 stelle, 47 camere, 100 posti letto. Via San Tommaso 26/30. Nel cuore del quartiere medievale di San Pellegrino.
 - **Entità legale**: Domus Heritage SRL — P.IVA 04754210401, sede legale Via Fucini 3, Cesenatico. AU: Angelina Erculei.
 
 ### Tariffe (aggiornate marzo 2026, +15%)
