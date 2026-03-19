@@ -43,70 +43,169 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.451.0/lucide.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preload" href="assets/hero-facciata.png" as="image" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LodgingBusiness",
-        "name": "Tuscia Living — Residenza Nazareth",
-        "description": "Il primo Long Stay Hotel per senior attivi in Italia. Camere arredate, pasti, attività culturali e assistenza nel cuore medievale di Viterbo.",
-        "url": "https://www.tuscialiving.it",
-        "telephone": "+390761264612",
-        "email": "info@tuscialiving.it",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via San Tommaso 26/30",
-          "addressLocality": "Viterbo",
-          "postalCode": "01100",
-          "addressCountry": "IT"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 42.4176,
-          "longitude": 12.1069
-        },
-        "image": "https://www.tuscialiving.it/assets/og-image.jpg",
-        "priceRange": "€€",
-        "checkinTime": "15:00",
-        "checkoutTime": "11:00",
-        "amenityFeature": [
-          {"@type": "LocationFeatureSpecification", "name": "Pasti inclusi", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "Attività culturali", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "Assistenza medica", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true}
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Quanto costa vivere a Tuscia Living?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Le tariffe partono da €2.000/mese (formula Tuscia Home per soggiorni 6-12 mesi). La formula Winter Resident parte da €2.250/mese (1-6 mesi). Sono disponibili tariffe Founding Member bloccate a vita per i primi iscritti. Il soggiorno breve Tuscia Discovery è disponibile a €100/giorno."}
-          },
-          {
-            "@type": "Question",
-            "name": "Cosa è incluso nella tariffa mensile?",
-            "acceptedAnswer": {"@type": "Answer", "text": "La tariffa mensile include: camera arredata con bagno privato, tre pasti al giorno, pulizie e cambio biancheria, Wi-Fi, tutte le attività culturali e ricreative, assistenza di base e reception H24."}
-          },
-          {
-            "@type": "Question",
-            "name": "Tuscia Living è una casa di riposo o RSA?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No. Tuscia Living è un Long Stay Hotel per senior autonomi e attivi. Non è una RSA, non è una casa di riposo. Gli ospiti sono clienti di un hotel, con piena autonomia e libertà. Il modello è quello dell'ospitalità alberghiera residenziale."}
-          },
-          {
-            "@type": "Question",
-            "name": "Dove si trova Tuscia Living?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Tuscia Living - Residenza Nazareth si trova in Via San Tommaso 26/30, nel centro storico medievale di Viterbo, in Toscana meridionale (Lazio settentrionale). A 100km da Roma, raggiungibile in treno o auto."}
-          }
-        ]
-      }
-    ]
+   "@context": "https://schema.org",
+   "@graph": [
+   {
+   "@type": "Hotel",
+   "@id": "https://tuscialiving.it/#hotel",
+   "name": "Tuscia Living — Residenza Nazareth",
+   "description": "Il primo Long Stay Hotel in Italia per senior attivi. Camere con pensione completa, attività e comunità nel centro storico di Viterbo.",
+   "url": "https://tuscialiving.it",
+   "telephone": "+390761264612",
+   "email": "info@tuscialiving.it",
+   "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Via San Tommaso 26/30",
+   "addressLocality": "Viterbo",
+   "postalCode": "01100",
+   "addressRegion": "VT",
+   "addressCountry": "IT"
+   },
+   "geo": {
+   "@type": "GeoCoordinates",
+   "latitude": 42.4168,
+   "longitude": 12.1048
+   },
+   "starRating": {
+   "@type": "Rating",
+   "ratingValue": "3"
+   },
+   "aggregateRating": {
+   "@type": "AggregateRating",
+   "ratingValue": "8.2",
+   "bestRating": "10",
+   "worstRating": "1",
+   "ratingCount": "150"
+   },
+   "amenityFeature": [
+   {"@type": "LocationFeatureSpecification", "name": "Pensione completa", "value": true},
+   {"@type": "LocationFeatureSpecification", "name": "Parcheggio gratuito", "value": true},
+   {"@type": "LocationFeatureSpecification", "name": "WiFi gratuito", "value": true},
+   {"@type": "LocationFeatureSpecification", "name": "Navetta terme", "value": true},
+   {"@type": "LocationFeatureSpecification", "name": "Bike Hotel", "value": true},
+   {"@type": "LocationFeatureSpecification", "name": "Club attività senior", "value": true}
+   ],
+   "numberOfRooms": 47,
+   "checkinTime": "24H",
+   "image": "https://tuscialiving.it/assets/hero-facciata.png",
+   "priceRange": "€2.000 - €3.000/mese"
+   },
+   {
+   "@type": "WebSite",
+   "@id": "https://tuscialiving.it/#website",
+   "url": "https://tuscialiving.it",
+   "name": "Tuscia Living",
+   "description": "Il primo Long Stay Hotel per senior attivi in Italia",
+   "publisher": {
+   "@id": "https://tuscialiving.it/#hotel"
+   },
+   "inLanguage": "it-IT"
+   },
+   {
+   "@type": "FAQPage",
+   "@id": "https://tuscialiving.it/#faq",
+   "mainEntity": [
+   {
+   "@type": "Question",
+   "name": "Quanto costa vivere in hotel da anziani a Tuscia Living?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "Le formule partono da €2.000/mese tutto incluso (camera, pensione completa, pulizie, WiFi, parcheggio, Club attività). La formula Discovery per soggiorni brevi costa €100/giorno."
+   }
+   },
+   {
+   "@type": "Question",
+   "name": "Tuscia Living è una RSA?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "No. Tuscia Living è un Long Stay Hotel per senior attivi e autosufficienti. Non è una struttura sanitaria: nessuna cartella clinica, libertà totale di movimento. Sei un cliente, non un paziente."
+   }
+   },
+   {
+   "@type": "Question",
+   "name": "Si può provare prima di impegnarsi a lungo termine?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "Sì. La formula Tuscia Discovery permette soggiorni da 1 a 4 settimane a €100/giorno con pensione completa e tutte le attività incluse."
+   }
+   },
+   {
+   "@type": "Question",
+   "name": "Dove si trova Tuscia Living?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "Nel quartiere medievale di San Pellegrino, nel centro storico di Viterbo. A 1h15 da Roma, 5 minuti dalle Terme dei Papi, 30 minuti dal Lago di Bolsena."
+   }
+   },
+   {
+   "@type": "Question",
+   "name": "I familiari possono venire a trovare i residenti?",
+   "acceptedAnswer": {"@type": "Answer",
+   "text": "Assolutamente sì. Con la formula Tuscia Home, i familiari hanno 14 giorni/anno di ospitalità gratuita. Inoltre è disponibile un Portale Famiglia con aggiornamenti online e supporto per videochiamate."
+   }
+   },
+   {
+   "@type": "Question",
+   "name": "Cosa è incluso nel prezzo mensile?",
+   "acceptedAnswer": {
+   "@type": "Answer",
+   "text": "Camera con bagno privato, pensione completa, pulizia camera 2 volte a settimana, WiFi, parcheggio gratuito, Club Tuscia Living con ginnastica dolce, escursioni, serate cinema, aperitivo sociale, corsi di cucina e arte."
+   }
+   }
+   ]
+   },
+   {
+   "@type": "Offer",
+   "@id": "https://tuscialiving.it/#offer-discovery",
+   "name": "Tuscia Discovery",
+   "description": "Soggiorno breve da 1 a 4 settimane con pensione completa e attività",
+   "price": "100",
+   "priceCurrency": "EUR",
+   "priceSpecification": {
+   "@type": "UnitPriceSpecification",
+   "price": "100",
+   "priceCurrency": "EUR",
+   "unitText": "giorno"
+   },
+   "availability": "https://schema.org/InStock"
+   },
+   {
+   "@type": "Offer",
+   "@id": "https://tuscialiving.it/#offer-winter",
+   "name": "Winter Resident",
+   "description": "Soggiorno da 1 a 6 mesi con camera singola, pensione completa e Club attività",
+   "price": "2600",
+   "priceCurrency": "EUR",
+   "priceSpecification": {
+   "@type": "UnitPriceSpecification",
+   "price": "2600",
+   "priceCurrency": "EUR",
+   "unitText": "mese"
+   },
+   "availability": "https://schema.org/InStock"
+   },
+   {
+   "@type": "Offer",
+   "@id": "https://tuscialiving.it/#offer-home",
+   "name": "Tuscia Home",
+   "description": "Residenza stabile da 6 a 12 mesi rinnovabile con tutti i servizi inclusi",
+   "price": "2350",
+   "priceCurrency": "EUR",
+   "priceSpecification": {
+   "@type": "UnitPriceSpecification",
+   "price": "2350",
+   "priceCurrency": "EUR",
+   "unitText": "mese"
+   },
+   "availability": "https://schema.org/InStock"
+   }
+   ]
   }
   </script>
   <script>
@@ -154,7 +253,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20 sm:h-28 md:h-36 lg:h-48 py-2">
         <a href="#" class="flex items-center space-x-2">
-          <img loading="lazy" src="assets/logo-v2.png" alt="Tuscia Living" class="h-16 sm:h-24 md:h-32 lg:h-44 w-auto">
+          <img src="assets/logo-v2.png" alt="Tuscia Living" class="h-16 sm:h-24 md:h-32 lg:h-44 w-auto">
         </a>
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
           <a href="#concetto" class="text-gray-600 hover:text-accent-600 transition">Il Concetto</a>
@@ -188,7 +287,7 @@
   <!-- HERO -->
   <section class="relative min-h-screen flex items-center hero-section overflow-hidden">
     <div class="absolute inset-0">
-      <img loading="lazy" src="assets/hero-facciata.png" alt="Residenza Nazareth - Tuscia Living" class="w-full h-full object-cover hero-img">
+      <img src="assets/hero-facciata.png" alt="Residenza Nazareth - Tuscia Living" class="w-full h-full object-cover hero-img">
       <div class="hero-gradient absolute inset-0"></div>
     </div>
 
