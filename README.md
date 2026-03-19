@@ -25,19 +25,6 @@
 - Winter Resident: €2.250/mese
 - Tuscia Home: €2.000/mese
 
-## Servizi Extra
-
-Disponibili su richiesta — prezzi da concordare con la direzione:
-
-- Infermiere a domicilio
-- Fisioterapia
-- Gestione medicinali
-- Accompagnamento a visite mediche
-- Pet-friendly
-- Medico reperibile H24
-
-> ⚠️ I prezzi dei servizi extra non sono pubblicati sul sito. Per informazioni contattare la direzione.
-
 ## Note
 
 - Tariffe precedenti (pre-marzo 2026): Discovery €90/g, Winter €2.250/m, Home €2.050/m, Founding Members €1.950/m e €1.750/m
