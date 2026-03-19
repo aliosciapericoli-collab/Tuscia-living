@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuscia Living — Italy's First Long Stay Hotel for Active Seniors</title>
+  <meta name="description" content="Italy's first Long Stay Hotel for active seniors. Rooms, full board and activities from €2,000/month in the historic centre of Viterbo. Discover our packages." />
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="canonical" href="https://tuscialiving.it/en/" />
+  <link rel="alternate" hreflang="it" href="https://tuscialiving.it/" />
+  <link rel="alternate" hreflang="en" href="https://tuscialiving.it/en/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tuscia Living — Italy's First Long Stay Hotel for Active Seniors" />
+  <meta property="og:description" content="Live in Viterbo, don't just age. Rooms with full board, activities and community for active seniors from €2,000/month. In the medieval heart of Tuscia." />
+  <meta property="og:url" content="https://tuscialiving.it/en/" />
+  <meta property="og:image" content="https://tuscialiving.it/assets/hero-facciata.png" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tuscia Living — Long Stay Hotel for Active Seniors in Viterbo" />
+  <meta name="twitter:description" content="Italy's first Long Stay Hotel for active seniors. From €2,000/month all-inclusive in the historic centre of Viterbo." />
+  <meta name="twitter:image" content="https://tuscialiving.it/assets/hero-facciata.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preload" href="../assets/hero-facciata.png" as="image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50:'#fdf8f0', 100:'#f9eddb', 200:'#f2d8b4', 300:'#e9be85', 400:'#dea054', 500:'#d4862e', 600:'#c06f22', 700:'#a0581e', 800:'#824720', 900:'#6b3b1e' },
+            accent: { 50:'#f0f7f4', 100:'#d9ece3', 200:'#b5d9c8', 300:'#87bea7', 400:'#5e9f84', 500:'#44836a', 600:'#366955', 700:'#2d5545', 800:'#274439', 900:'#213930' },
+            warm: { 50:'#fefcf9', 100:'#fdf5ea', 200:'#fae8cc', 300:'#f5d5a0', 400:'#efbc6e', 500:'#e9a33c', 600:'#d4862e', 700:'#b06921', 800:'#8d5320', 900:'#74441e' },
+          },
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient { background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%) !important; }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-warm-50">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20 sm:h-28 md:h-36 lg:h-48 py-2">
+        <a href="/en/" class="flex items-center space-x-2">
+          <img src="../assets/logo-v2.png" alt="Tuscia Living" class="h-16 sm:h-24 md:h-32 lg:h-44 w-auto">
+        </a>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="#concept" class="text-gray-600 hover:text-accent-600 transition">The Concept</a>
+          <a href="#packages" class="text-gray-600 hover:text-accent-600 transition">Packages & Prices</a>
+          <a href="#structure" class="text-gray-600 hover:text-accent-600 transition">The Hotel</a>
+          <a href="#gallery" class="text-gray-600 hover:text-accent-600 transition">Gallery</a>
+          <a href="#activities" class="text-gray-600 hover:text-accent-600 transition">Activities</a>
+          <a href="#families" class="text-gray-600 hover:text-accent-600 transition">For Families</a>
+          <a href="/" class="text-gray-500 hover:text-accent-600 transition text-xs border border-gray-300 px-3 py-1 rounded-full">🇮🇹 IT</a>
+          <a href="#contact" class="bg-accent-600 text-white px-5 py-2 rounded-full hover:bg-accent-700 transition">Contact Us</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-3">
+      <a href="#concept" class="block text-gray-600 hover:text-accent-600">The Concept</a>
+      <a href="#packages" class="block text-gray-600 hover:text-accent-600">Packages & Prices</a>
+      <a href="#structure" class="block text-gray-600 hover:text-accent-600">The Hotel</a>
+      <a href="#activities" class="block text-gray-600 hover:text-accent-600">Activities</a>
+      <a href="#families" class="block text-gray-600 hover:text-accent-600">For Families</a>
+      <a href="/" class="block text-gray-500">🇮🇹 Italian version</a>
+      <a href="#contact" class="block bg-accent-600 text-white px-4 py-2 rounded-full text-center">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="../assets/hero-facciata.png" alt="Residenza Nazareth - Tuscia Living" class="w-full h-full object-cover">
+      <div class="hero-gradient absolute inset-0"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <div class="inline-block mb-6 px-4 py-2 bg-warm-400/90 text-white text-sm font-semibold rounded-full">
+        ✨ Founding Members — 10 spots at a special rate
+      </div>
+      <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+        Live in Viterbo,<br>don't just age.
+      </h1>
+      <p class="text-xl sm:text-2xl max-w-3xl mx-auto mb-10 font-light">
+        <span style="background:rgba(0,0,0,0.52);color:#fff;padding:6px 18px 8px;border-radius:8px;display:inline-block;line-height:1.7;">
+          Italy's first Long Stay Hotel for active seniors.<br>In the medieval heart of Tuscia.
+        </span>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#packages" class="bg-warm-500 hover:bg-warm-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-lg">Discover our packages</a>
+        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-accent-700 px-8 py-4 rounded-full text-lg font-semibold transition">Request information</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 PILLARS -->
+  <section id="concept" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">Why Tuscia Living</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Five pillars for a new way of living your senior years. With dignity, freedom and joy.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card-hover bg-primary-50 rounded-2xl p-8 fade-in">
+          <div class="w-12 h-12 mb-4 text-accent-700"><i data-lucide="building" class="w-10 h-10 stroke-[1.5]"></i></div>
+          <h3 class="font-serif text-xl font-bold text-accent-800 mb-3">Hotel, not a care home</h3>
+          <p class="text-gray-600">Private en-suite rooms, breakfast included, room service. A real hotel experience.</p>
+        </div>
+        <div class="card-hover bg-accent-50 rounded-2xl p-8 fade-in">
+          <div class="w-12 h-12 mb-4 text-accent-700"><i data-lucide="user-check" class="w-10 h-10 stroke-[1.5]"></i></div>
+          <h3 class="font-serif text-xl font-bold text-accent-800 mb-3">Guest, not a patient</h3>
+          <p class="text-gray-600">No medical file at check-in. Total freedom of movement and choice.</p>
+        </div>
+        <div class="card-hover bg-warm-50 rounded-2xl p-8 fade-in">
+          <div class="w-12 h-12 mb-4 text-accent-700"><i data-lucide="users" class="w-10 h-10 stroke-[1.5]"></i></div>
+          <h3 class="font-serif text-xl font-bold text-accent-800 mb-3">Genuine community</h3>
+          <p class="text-gray-600">Friday aperitivos, excursions, courses. Real relationships, not forced ones.</p>
+        </div>
+        <div class="card-hover bg-accent-50 rounded-2xl p-8 fade-in">
+          <div class="w-12 h-12 mb-4 text-accent-700"><i data-lucide="map-pin" class="w-10 h-10 stroke-[1.5]"></i></div>
+          <h3 class="font-serif text-xl font-bold text-accent-800 mb-3">Tuscia — a unique territory</h3>
+          <p class="text-gray-600">Thermal spas, medieval villages, lake, nature. Everything within easy reach.</p>
+        </div>
+        <div class="card-hover bg-primary-50 rounded-2xl p-8 fade-in">
+          <div class="w-12 h-12 mb-4 text-accent-700"><i data-lucide="shield-check" class="w-10 h-10 stroke-[1.5]"></i></div>
+          <h3 class="font-serif text-xl font-bold text-accent-800 mb-3">All-inclusive, zero worries</h3>
+          <p class="text-gray-600">Full board, housekeeping, WiFi, parking, Club activities. Everything included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="py-20 bg-warm-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">Our 3 Packages</h2>
+        <p class="text-lg text-gray-600">Choose the package that suits you best. All include the Tuscia Living Club.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Discovery -->
+        <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+          <div class="bg-accent-50 p-8 text-center">
+            <h3 class="font-serif text-2xl font-bold text-accent-800">Tuscia Discovery</h3>
+            <p class="text-gray-500 mt-1">1–4 weeks</p>
+            <div class="mt-4"><span class="text-5xl font-bold text-accent-700">€100</span><span class="text-gray-500">/day</span></div>
+            <p class="text-sm text-gray-500 mt-2">Ideal for: Trying the experience</p>
+          </div>
+          <div class="p-8">
+            <ul class="space-y-3">
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Full board</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Guided excursions</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Tuscia Living Club</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> WiFi and parking</li>
+            </ul>
+            <a href="#contact" class="mt-8 block text-center bg-accent-600 text-white py-3 rounded-full font-semibold hover:bg-accent-700 transition">Request information</a>
+          </div>
+        </div>
+
+        <!-- Winter Resident -->
+        <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+          <div class="bg-primary-50 p-8 text-center">
+            <h3 class="font-serif text-2xl font-bold text-accent-800">Winter Resident</h3>
+            <p class="text-gray-500 mt-1">1–6 months</p>
+            <div class="mt-4"><span class="text-5xl font-bold text-accent-700">€2,600</span><span class="text-gray-500">/month</span></div>
+            <p class="text-sm text-gray-500 mt-2">Ideal for: Wintering in the warm</p>
+          </div>
+          <div class="p-8">
+            <ul class="space-y-3">
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Single room with private bathroom</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Full board</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Room cleaning 2x/week</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Tuscia Living Club</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> WiFi and parking</li>
+            </ul>
+            <div class="mt-6 p-4 bg-warm-50 rounded-xl text-center">
+              <p class="text-sm font-semibold text-warm-700">🌟 Founding Members</p>
+              <p class="text-2xl font-bold text-warm-600">€2,250<span class="text-sm font-normal">/month</span></p>
+              <p class="text-xs text-warm-600">rate locked for 24 months</p>
+            </div>
+            <a href="#contact" class="mt-6 block text-center bg-accent-600 text-white py-3 rounded-full font-semibold hover:bg-accent-700 transition">Request information</a>
+          </div>
+        </div>
+
+        <!-- Tuscia Home -->
+        <div class="card-hover bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-accent-500 relative fade-in">
+          <div class="absolute top-4 right-4 bg-accent-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most popular</div>
+          <div class="bg-accent-100 p-8 text-center">
+            <h3 class="font-serif text-2xl font-bold text-accent-800">Tuscia Home</h3>
+            <p class="text-gray-500 mt-1">6–12 months (renewable)</p>
+            <div class="mt-4"><span class="text-5xl font-bold text-accent-700">€2,350</span><span class="text-gray-500">/month</span></div>
+            <p class="text-sm text-gray-500 mt-2">Ideal for: Putting down roots</p>
+          </div>
+          <div class="p-8">
+            <ul class="space-y-3">
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Everything in Winter Resident</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Postal address registration</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> 30-day break per year</li>
+              <li class="flex items-start"><span class="text-accent-500 mr-2 mt-1">✓</span> Family hospitality 14 days/year</li>
+            </ul>
+            <div class="mt-6 p-4 bg-warm-50 rounded-xl text-center">
+              <p class="text-sm font-semibold text-warm-700">🌟 Founding Members</p>
+              <p class="text-2xl font-bold text-warm-600">€2,000<span class="text-sm font-normal">/month</span></p>
+              <p class="text-xs text-warm-600">rate locked for 24 months</p>
+            </div>
+            <a href="#contact" class="mt-6 block text-center bg-accent-600 text-white py-3 rounded-full font-semibold hover:bg-accent-700 transition">Request information</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-sm text-gray-500 mt-8">Founding Members: the first 10 long-stay residents receive a rate locked for 24 months.</p>
+      <div class="text-center mt-6">
+        <a href="../assets/brochure-tuscia-living.pdf" download="Tuscia-Living-Brochure.pdf"
+           class="inline-flex items-center gap-2 border-2 border-accent-600 text-accent-600 hover:bg-accent-600 hover:text-white font-semibold px-8 py-3 rounded-full transition text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Download brochure
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE HOTEL -->
+  <section id="structure" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">The Hotel</h2>
+        <p class="text-lg text-gray-600">Residenza Nazareth: in the heart of the medieval San Pellegrino quarter, Viterbo.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 fade-in">
+        <div class="text-center p-6 bg-accent-50 rounded-2xl"><div class="text-4xl font-bold text-accent-700">47</div><div class="text-gray-600 mt-1">Rooms</div></div>
+        <div class="text-center p-6 bg-primary-50 rounded-2xl"><div class="text-4xl font-bold text-accent-700">90</div><div class="text-gray-600 mt-1">Beds</div></div>
+        <div class="text-center p-6 bg-warm-100 rounded-2xl"><div class="text-4xl font-bold text-accent-700">8.2</div><div class="text-gray-600 mt-1">Booking.com</div></div>
+        <div class="text-center p-6 bg-accent-50 rounded-2xl"><div class="text-4xl font-bold text-accent-700">9.1</div><div class="text-gray-600 mt-1">Location score</div></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="star" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">3-star hotel</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="landmark" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">San Pellegrino quarter</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="car" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">Free parking</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="bus" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">Spa shuttle every 30 min</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="bike" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">Certified Bike Hotel</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="key-round" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">24H check-in</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="church" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">Consecrated chapel</span></div>
+        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl"><i data-lucide="presentation" class="w-5 h-5 text-accent-600 stroke-[1.5]"></i><span class="text-sm">2 meeting rooms</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-20 bg-warm-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">The Hotel after Renovation</h2>
+        <p class="text-lg text-gray-600">A preview of what Tuscia Living will look like.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 fade-in">
+        <a href="../assets/gallery-ingresso-storico.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-ingresso-storico.png" alt="Historic Entrance" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Historic Entrance</span></div></a>
+        <a href="../assets/gallery-facciata.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-facciata.png" alt="Facade" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Facade</span></div></a>
+        <a href="../assets/gallery-ingresso.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-ingresso.png" alt="Reception" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Reception</span></div></a>
+        <a href="../assets/gallery-lounge.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-lounge.png" alt="Lounge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Lounge</span></div></a>
+        <a href="../assets/gallery-cappella2.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-cappella2.png" alt="Chapel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Chapel</span></div></a>
+        <a href="../assets/gallery-cinema.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-cinema.png" alt="Cinema Room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Cinema Room</span></div></a>
+        <a href="../assets/gallery-sala-meeting.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-sala-meeting.png" alt="Conference Room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Conference Room</span></div></a>
+        <a href="../assets/gallery-ristorante.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-ristorante.png" alt="Restaurant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Restaurant</span></div></a>
+        <a href="../assets/gallery-camera1.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-camera1.png" alt="Room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Room</span></div></a>
+        <a href="../assets/gallery-camera3.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-camera3.png" alt="Suite Room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Suite Room</span></div></a>
+        <a href="../assets/gallery-bagno1.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-bagno1.png" alt="Bathroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Bathroom</span></div></a>
+        <a href="../assets/gallery-bagno2.png" class="group relative overflow-hidden rounded-xl aspect-square"><img loading="lazy" src="../assets/gallery-bagno2.png" alt="Bathroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Bathroom</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" class="py-20 bg-accent-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">The Tuscia Living Club</h2>
+        <p class="text-lg text-gray-600">Activities included in all packages. Join whenever you want, as much as you want.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in"><img loading="lazy" src="../assets/ginnastica-dolce.jpg" alt="Gentle gymnastics" class="w-full h-48 object-cover"><div class="p-6"><h3 class="font-serif text-lg font-bold text-accent-800">Gentle gymnastics</h3><p class="text-gray-500 text-sm mt-1">Twice a week</p></div></div>
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in"><img loading="lazy" src="../assets/passeggiata-viterbo.jpg" alt="Excursions" class="w-full h-48 object-cover"><div class="p-6"><h3 class="font-serif text-lg font-bold text-accent-800">Excursions</h3><p class="text-gray-500 text-sm mt-1">Villages and thermal spas</p></div></div>
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in"><img loading="lazy" src="../assets/sala-cinema.png" alt="Cinema evenings" class="w-full h-48 object-cover"><div class="p-6"><h3 class="font-serif text-lg font-bold text-accent-800">Cinema & music evenings</h3><p class="text-gray-500 text-sm mt-1">And board games</p></div></div>
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in"><img loading="lazy" src="../assets/aperitivo-bar.jpg" alt="Social aperitivo" class="w-full h-48 object-cover"><div class="p-6"><h3 class="font-serif text-lg font-bold text-accent-800">Social aperitivo</h3><p class="text-gray-500 text-sm mt-1">Every Friday evening</p></div></div>
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in"><img loading="lazy" src="../assets/colazione-km0.jpg" alt="Km0 breakfast" class="w-full h-48 object-cover"><div class="p-6"><h3 class="font-serif text-lg font-bold text-accent-800">Km0 breakfast</h3><p class="text-gray-500 text-sm mt-1">Fresh local produce every morning</p></div></div>
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in"><img loading="lazy" src="../assets/corsi-cucina.jpg" alt="Cooking courses" class="w-full h-48 object-cover"><div class="p-6"><h3 class="font-serif text-lg font-bold text-accent-800">Cooking & art courses</h3><p class="text-gray-500 text-sm mt-1">And language classes</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-accent-700 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 fade-in">
+      <h2 class="font-serif text-4xl font-bold mb-4">Not a nursing home. Not just a hotel.<br>A new life in Tuscia.</h2>
+      <p class="text-2xl mb-8 text-white/80">From €2,000/month, all-inclusive.</p>
+      <a href="#contact" class="inline-block bg-warm-500 hover:bg-warm-600 text-white px-10 py-4 rounded-full text-lg font-semibold transition shadow-lg">Request information</a>
+    </div>
+  </section>
+
+  <!-- FOR FAMILIES -->
+  <section id="families" class="py-20 bg-warm-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">For Families</h2>
+        <p class="text-lg text-gray-600">We understand that entrusting us with a loved one is an important decision.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 fade-in">
+        <div class="bg-white p-8 rounded-2xl shadow-sm text-center"><div class="mb-4"><i data-lucide="monitor-smartphone" class="w-10 h-10 mx-auto text-accent-600 stroke-[1.5]"></i></div><h3 class="font-serif text-lg font-bold mb-2">Family Portal</h3><p class="text-gray-600 text-sm">Online dashboard with activities, photos and updates. Always current.</p></div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm text-center"><div class="mb-4"><i data-lucide="video" class="w-10 h-10 mx-auto text-accent-600 stroke-[1.5]"></i></div><h3 class="font-serif text-lg font-bold mb-2">Assisted video calls</h3><p class="text-gray-600 text-sm">Our staff helps your loved one connect with you at any time.</p></div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm text-center"><div class="mb-4"><i data-lucide="home" class="w-10 h-10 mx-auto text-accent-600 stroke-[1.5]"></i></div><h3 class="font-serif text-lg font-bold mb-2">Family hospitality</h3><p class="text-gray-600 text-sm">With the Tuscia Home package: 14 free days/year for visiting family members.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-serif text-4xl font-bold text-accent-800 mb-4">Where We Are</h2>
+        <p class="text-lg text-gray-600">In the medieval San Pellegrino quarter, the historic heart of Viterbo.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="fade-in">
+          <div class="bg-accent-50 p-8 rounded-2xl mb-8">
+            <h3 class="font-serif text-xl font-bold text-accent-800 mb-4">Address</h3>
+            <p class="text-lg text-gray-700 mb-2">Via San Tommaso 26/30</p>
+            <p class="text-gray-600 mb-4">01100 Viterbo (VT), Italy</p>
+            <p class="text-gray-700 mb-1">📞 <a href="tel:+390761264612" class="text-accent-600 hover:underline">+39 0761 1264612</a></p>
+            <p class="text-gray-700 mb-3">📧 <a href="mailto:info@tuscialiving.it" class="text-accent-600 hover:underline">info@tuscialiving.it</a></p>
+            <a href="https://wa.me/393356614383?text=Hello,%20I%20would%20like%20information%20about%20Tuscia%20Living" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-3 rounded-full transition text-sm shadow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.836L.057 23.572a.75.75 0 00.921.921l5.736-1.465A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.722 9.722 0 01-4.964-1.358l-.357-.213-3.706.947.964-3.588-.234-.372A9.722 9.722 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+              WhatsApp us
+            </a>
+            <a href="../assets/brochure-tuscia-living.pdf" download="Tuscia-Living-Brochure.pdf"
+               class="inline-flex items-center gap-2 mt-3 border-2 border-accent-600 text-accent-600 hover:bg-accent-600 hover:text-white font-semibold px-5 py-3 rounded-full transition text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              Download brochure
+            </a>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl"><i data-lucide="train-front" class="w-6 h-6 text-accent-600 stroke-[1.5]"></i><div><span class="font-medium">Rome</span><span class="text-gray-500 ml-2">1h15 (direct train or car)</span></div></div>
+            <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl"><i data-lucide="waves" class="w-6 h-6 text-accent-600 stroke-[1.5]"></i><div><span class="font-medium">Terme dei Papi</span><span class="text-gray-500 ml-2">5 min (free shuttle)</span></div></div>
+            <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl"><i data-lucide="sailboat" class="w-6 h-6 text-accent-600 stroke-[1.5]"></i><div><span class="font-medium">Lake Bolsena</span><span class="text-gray-500 ml-2">30 min</span></div></div>
+            <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl"><i data-lucide="church" class="w-6 h-6 text-accent-600 stroke-[1.5]"></i><div><span class="font-medium">Orvieto</span><span class="text-gray-500 ml-2">45 min</span></div></div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <form class="bg-accent-50 p-8 rounded-2xl" action="https://formsubmit.co/tuscialiving@gmail.com" method="POST">
+            <h3 class="font-serif text-xl font-bold text-accent-800 mb-6">Request information</h3>
+            <div class="space-y-4">
+              <div><label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Full name</label><input id="nome" type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 outline-none"></div>
+              <div><label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label><input id="email" type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 outline-none"></div>
+              <div><label for="telefono" class="block text-sm font-medium text-gray-700 mb-1">Phone</label><input id="telefono" type="tel" name="phone" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 outline-none"></div>
+              <div><label for="messaggio" class="block text-sm font-medium text-gray-700 mb-1">Message</label><textarea id="messaggio" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 outline-none"></textarea></div>
+              <input type="hidden" name="_subject" value="New enquiry from tuscialiving.it/en">
+              <input type="hidden" name="_next" value="https://tuscialiving.it/en/#contact">
+              <input type="hidden" name="_captcha" value="false">
+              <button type="submit" class="w-full bg-accent-600 text-white py-3 rounded-full font-semibold hover:bg-accent-700 transition">Send enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-accent-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <img loading="lazy" src="../assets/logo.png" alt="Tuscia Living" class="h-12 brightness-0 invert">
+            <span class="font-serif text-xl font-bold">Tuscia Living</span>
+          </div>
+          <p class="text-gray-400 text-sm">Italy's first Long Stay Hotel for active seniors. Residenza Nazareth, Viterbo.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contacts</h4>
+          <p class="text-gray-400 text-sm">Via San Tommaso 26/30</p>
+          <p class="text-gray-400 text-sm">01100 Viterbo (VT), Italy</p>
+          <p class="text-gray-400 text-sm mt-2">Tel: +39 0761 1264612</p>
+          <p class="text-gray-400 text-sm">info@tuscialiving.it</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick links</h4>
+          <a href="#concept" class="block text-gray-400 text-sm hover:text-white transition mb-1">The Concept</a>
+          <a href="#packages" class="block text-gray-400 text-sm hover:text-white transition mb-1">Packages & Prices</a>
+          <a href="#structure" class="block text-gray-400 text-sm hover:text-white transition mb-1">The Hotel</a>
+          <a href="#activities" class="block text-gray-400 text-sm hover:text-white transition mb-1">Activities</a>
+          <a href="#contact" class="block text-gray-400 text-sm hover:text-white transition">Contact</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+        <p>© 2026 Tuscia Living — Residenza Nazareth. All rights reserved.</p>
+        <p class="mt-1">Managed by <strong class="text-gray-400">Domus Heritage SRL</strong> — VAT IT04754210401 — Via Fucini 3, 47042 Cesenatico (FC), Italy</p>
+        <p class="mt-1"><a href="/privacy/" class="hover:text-white">Privacy Policy</a> | <a href="/cookie-policy/" class="hover:text-white">Cookie Policy</a> | <a href="/" class="hover:text-white">🇮🇹 Versione italiana</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/393356614383?text=Hello,%20I%20would%20like%20information%20about%20Tuscia%20Living" target="_blank" rel="noopener"
+     style="position:fixed;bottom:24px;left:24px;z-index:998;display:flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:600;font-size:.82rem;padding:12px 18px;border-radius:50px;box-shadow:0 4px 16px rgba(0,0,0,.25);text-decoration:none">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.836L.057 23.572a.75.75 0 00.921.921l5.736-1.465A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.722 9.722 0 01-4.964-1.358l-.357-.213-3.706.947.964-3.588-.234-.372A9.722 9.722 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+    WhatsApp
+  </a>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
