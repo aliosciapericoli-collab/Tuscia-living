@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Tuscia Living | Risorse per Senior e Famiglie</title>
+  <meta name="description" content="Guide, confronti e consigli pratici per chi cerca la soluzione giusta per sé o per un genitore anziano. Scritto con onestà, senza brochure." />
+  <link rel="canonical" href="https://tuscialiving.it/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog Tuscia Living — Risorse per Senior e Famiglie" />
+  <meta property="og:description" content="Guide pratiche, confronti onesti e racconti dalla Tuscia per chi cerca la soluzione giusta per sé o per un genitore anziano." />
+  <meta property="og:url" content="https://tuscialiving.it/blog/" />
+  <meta property="og:image" content="https://tuscialiving.it/assets/hero-facciata.png" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Tuscia Living",
+    "description": "Guide e risorse per senior attivi e famiglie che cercano alternative alle case di riposo",
+    "url": "https://tuscialiving.it/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tuscia Living",
+      "logo": { "@type": "ImageObject", "url": "https://tuscialiving.it/assets/logo.png" }
+    },
+    "inLanguage": "it-IT"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--verde:#2d5545;--verde-chiaro:#3a6b5a;--oro:#d4862e;--crema:#faf8f3;--testo:#1a1a1a;--grigio:#6b6b6b}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',system-ui,sans-serif;color:var(--testo);background:var(--crema);line-height:1.6}
+    a{color:var(--verde);text-decoration:none}
+    a:hover{color:var(--verde-chiaro);text-decoration:underline}
+
+    /* HEADER */
+    header{background:var(--verde);color:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+    .header-inner{max-width:1100px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff}
+    .logo span{color:#d4a96a;font-size:.75rem;font-weight:400;display:block;letter-spacing:.08em}
+    nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    nav a{color:rgba(255,255,255,.85);font-size:.82rem;padding:5px 10px;border-radius:4px;transition:background .2s}
+    nav a:hover,nav a.active{background:rgba(255,255,255,.15);color:#fff;text-decoration:none}
+    .nav-cta{background:var(--oro)!important;color:#fff!important;border-radius:20px!important;padding:5px 14px!important}
+    .nav-cta:hover{background:#b87226!important}
+
+    /* HERO BLOG */
+    .blog-hero{background:linear-gradient(135deg,var(--verde) 0%,#1e3d2f 100%);color:#fff;padding:48px 20px;text-align:center}
+    .blog-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:12px}
+    .blog-hero p{font-size:1rem;opacity:.88;max-width:580px;margin:0 auto}
+
+    /* MAIN */
+    main{max-width:1100px;margin:0 auto;padding:40px 20px}
+
+    /* BREADCRUMB */
+    .breadcrumb{font-size:.8rem;color:var(--grigio);margin-bottom:32px}
+    .breadcrumb a{color:var(--grigio)}
+
+    /* CATEGORIE */
+    .cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+    .cat-btn{padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:500;border:1.5px solid var(--verde);color:var(--verde);cursor:pointer;transition:all .2s;background:transparent}
+    .cat-btn:hover,.cat-btn.active{background:var(--verde);color:#fff;text-decoration:none}
+
+    /* GRID ARTICOLI */
+    .articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    @media(max-width:900px){.articles-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:580px){.articles-grid{grid-template-columns:1fr}}
+
+    /* CARD ARTICOLO */
+    .article-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+    .article-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+    .card-img{height:180px;overflow:hidden;background:#e8e4dc}
+    .card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+    .article-card:hover .card-img img{transform:scale(1.04)}
+    .card-body{padding:20px;flex:1;display:flex;flex-direction:column}
+    .card-cat{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--oro);margin-bottom:8px}
+    .card-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--testo);margin-bottom:10px;line-height:1.3}
+    .card-excerpt{font-size:.85rem;color:var(--grigio);line-height:1.6;flex:1;margin-bottom:14px}
+    .card-meta{font-size:.75rem;color:#999;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #f0ede8;padding-top:12px;margin-top:auto}
+    .card-readmore{font-size:.8rem;font-weight:600;color:var(--verde)}
+
+    /* CARD PILASTRO (featured) */
+    .pillar-card{grid-column:span 2;background:var(--verde);color:#fff;border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:220px}
+    @media(max-width:700px){.pillar-card{grid-column:span 1;grid-template-columns:1fr}}
+    .pillar-card .card-body{padding:28px}
+    .pillar-card .card-cat{color:rgba(255,255,255,.7)}
+    .pillar-card .card-title{font-size:1.3rem;color:#fff}
+    .pillar-card .card-excerpt{color:rgba(255,255,255,.8)}
+    .pillar-card .card-readmore{color:#d4a96a}
+    .pillar-card .card-meta{border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.6)}
+    .pillar-img{overflow:hidden;min-height:200px}
+    .pillar-img img{width:100%;height:100%;object-fit:cover}
+
+    /* CTA NEWSLETTER */
+    .cta-newsletter{background:#f5f0e8;border-radius:12px;padding:36px;text-align:center;margin:48px 0}
+    .cta-newsletter h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--verde);margin-bottom:8px}
+    .cta-newsletter p{color:var(--grigio);margin-bottom:20px;max-width:480px;margin-left:auto;margin-right:auto}
+    .cta-form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .cta-form input{padding:10px 16px;border:1.5px solid #ddd;border-radius:6px;font-size:.9rem;min-width:240px;outline:none}
+    .cta-form input:focus{border-color:var(--verde)}
+    .cta-form button{padding:10px 22px;background:var(--verde);color:#fff;border:none;border-radius:6px;font-size:.9rem;font-weight:600;cursor:pointer}
+
+    /* FOOTER */
+    footer{background:#1a1a1a;color:#999;padding:32px 20px;margin-top:60px;text-align:center;font-size:.82rem}
+    footer a{color:#bbb}
+    footer a:hover{color:#fff}
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tuscia Living <span>Residenza Nazareth · Viterbo</span></a>
+    <nav>
+      <a href="/#formule">Formule e prezzi</a>
+      <a href="/#struttura">La struttura</a>
+      <a href="/#attivita">Attività</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/#contatti" class="nav-cta">Contattaci</a>
+    </nav>
+  </div>
+</header>
+
+<div class="blog-hero">
+  <h1>Risorse per Senior e Famiglie</h1>
+  <p>Guide pratiche, confronti onesti e racconti dalla Tuscia. Scritti per aiutare, non per vendere.</p>
+</div>
+
+<main>
+  <div class="breadcrumb">
+    <a href="/">tuscialiving.it</a> / Blog
+  </div>
+
+  <!-- Filtri categoria -->
+  <div class="cats">
+    <a href="/blog/" class="cat-btn active">Tutti</a>
+    <a href="/blog/#rsa" class="cat-btn">RSA e Alternative</a>
+    <a href="/blog/#long-stay" class="cat-btn">Long Stay</a>
+    <a href="/blog/#tuscia" class="cat-btn">La Tuscia</a>
+    <a href="/blog/#famiglia" class="cat-btn">Per la Famiglia</a>
+    <a href="/blog/#terza-eta" class="cat-btn">Terza Età Attiva</a>
+  </div>
+
+  <!-- Griglia articoli -->
+  <div class="articles-grid" id="articles">
+
+    <!-- PILASTRO 1 — featured -->
+    <div class="pillar-card">
+      <div class="card-body">
+        <div class="card-cat">🏛️ Pilastro · RSA e Alternative</div>
+        <h2 class="card-title">RSA vs Alternativa: la Guida Completa 2026</h2>
+        <p class="card-excerpt">Cos'è davvero una RSA, quando è la scelta giusta e quando no. Il confronto onesto che nessun sito italiano ha fatto.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+      <div class="pillar-img">
+        <img loading="lazy" src="/assets/cover-residenza.jpg" alt="RSA vs alternativa residenza anziani autosufficienti">
+      </div>
+    </div>
+
+    <!-- ARTICOLO 1 -->
+    <div class="article-card">
+      <div class="card-img">
+        <img loading="lazy" src="/assets/seniors-walking.jpg" alt="7 segnali che tuo genitore anziano ha bisogno di supporto">
+      </div>
+      <div class="card-body">
+        <div class="card-cat">👨‍👩‍👧 Per la Famiglia</div>
+        <h2 class="card-title">7 Segnali che Tuo Padre o Tua Madre Ha Bisogno di Più Supporto</h2>
+        <p class="card-excerpt">Non sempre il momento giusto è evidente. Questi segnali aiutano a capire quando è ora di fare una conversazione importante.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILASTRO 2 — featured -->
+    <div class="pillar-card">
+      <div class="card-body">
+        <div class="card-cat">🏨 Pilastro · Long Stay</div>
+        <h2 class="card-title">Long-Stay Hotel per Anziani: il Modello Nuovo</h2>
+        <p class="card-excerpt">Le origini internazionali del Retirement Community, come funziona in pratica e perché è diverso da tutto il resto.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+      <div class="pillar-img">
+        <img loading="lazy" src="/assets/hotel-room.jpg" alt="Long stay hotel anziani terza età modello residenziale">
+      </div>
+    </div>
+
+    <!-- ARTICOLO 2 -->
+    <div class="article-card">
+      <div class="card-img">
+        <img loading="lazy" src="/assets/gallery-terme-papi.jpg" alt="Terme dei Papi Viterbo senior anziani benessere">
+      </div>
+      <div class="card-body">
+        <div class="card-cat">🌿 La Tuscia</div>
+        <h2 class="card-title">Terme dei Papi Viterbo: guida per Senior</h2>
+        <p class="card-excerpt">Le terme più antiche d'Europa nel cuore della Tuscia laziale. Storia, benefici, come viverle nel quotidiano da residente.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICOLO 3 -->
+    <div class="article-card">
+      <div class="card-img">
+        <img loading="lazy" src="/assets/lago-bolsena.jpg" alt="Lago di Bolsena anziani attività accessibilità">
+      </div>
+      <div class="card-body">
+        <div class="card-cat">🌿 La Tuscia</div>
+        <h2 class="card-title">Lago di Bolsena: il Grande Lago Vulcanico che Non Ti Aspetti</h2>
+        <p class="card-excerpt">A 30 minuti da Viterbo, uno dei laghi più belli d'Italia. Attività, accessibilità e dove mangiare per la terza età.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICOLO 4 -->
+    <div class="article-card">
+      <div class="card-img">
+        <img loading="lazy" src="/assets/dining-together.jpg" alt="Senso di colpa figlio lontano genitore anziano">
+      </div>
+      <div class="card-body">
+        <div class="card-cat">👨‍👩‍👧 Per la Famiglia</div>
+        <h2 class="card-title">Il Senso di Colpa del Figlio Lontano: Come Gestirlo Senza Farsi del Male</h2>
+        <p class="card-excerpt">Un articolo scritto per chi si sveglia la notte preoccupato per mamma o papà che vivono lontani. Senza giudizi.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILASTRO 3 — featured -->
+    <div class="pillar-card">
+      <div class="card-body">
+        <div class="card-cat">🏰 Pilastro · La Tuscia</div>
+        <h2 class="card-title">La Tuscia per i Senior: Vivere Bene tra Viterbo, i Borghi e le Terme</h2>
+        <p class="card-excerpt">Il territorio come terapia. Terme, borghi etruschi, paesaggi vulcanici, cucina, ritmo lento. Un ecosistema di benessere.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+      <div class="pillar-img">
+        <img loading="lazy" src="/assets/passeggiata-viterbo.jpg" alt="Viterbo borghi medievali Tuscia terza età senior">
+      </div>
+    </div>
+
+    <!-- ARTICOLO 5 -->
+    <div class="article-card">
+      <div class="card-img">
+        <img loading="lazy" src="/assets/ginnastica-dolce.jpg" alt="Terza età attiva anziani benessere attività">
+      </div>
+      <div class="card-body">
+        <div class="card-cat">⭐ Terza Età Attiva</div>
+        <h2 class="card-title">Terza Età Attiva: cosa Significa Davvero e Come Cambia la Vita</h2>
+        <p class="card-excerpt">Non è solo un'espressione di marketing. È una scelta. Socialità, stimoli cognitivi, movimento e cultura: cosa dice la scienza.</p>
+        <div class="card-meta">
+          <span>Prossimamente</span>
+          <span class="card-readmore">In preparazione →</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /articles-grid -->
+
+  <!-- CTA newsletter / contatto -->
+  <div class="cta-newsletter">
+    <h2>Vuoi sapere quando pubblichiamo?</h2>
+    <p>Lascia la tua email: ti avvisiamo quando usciranno i primi articoli. Niente spam, solo contenuti che valgono il tuo tempo.</p>
+    <form class="cta-form" action="https://formspree.io/f/info@tuscialiving.it" method="POST">
+      <input type="email" name="email" placeholder="La tua email" required>
+      <button type="submit">Avvisami</button>
+    </form>
+  </div>
+
+</main>
+
+<footer>
+  <p><a href="/">tuscialiving.it</a> · <a href="/privacy/">Privacy</a> · <a href="/cookie-policy/">Cookie Policy</a></p>
+  <p style="margin-top:8px">Tuscia Living — Residenza Nazareth · Via San Tommaso 26/30, Viterbo · <a href="tel:+390761264612">+39 0761 1264612</a></p>
+  <p style="margin-top:6px;font-size:.76rem;color:#555">Domus Heritage SRL — P.IVA 04754210401</p>
+</footer>
+</body>
+</html>

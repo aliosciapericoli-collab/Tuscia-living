@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SOSTITUIRE: titolo ottimizzato, max 60 caratteri, con keyword principale -->
+  <title>[TITOLO ARTICOLO] | Tuscia Living</title>
+  <!-- SOSTITUIRE: 140-155 caratteri, keyword + verbo d'azione -->
+  <meta name="description" content="[META DESCRIPTION 140-155 CARATTERI]" />
+  <link rel="canonical" href="https://tuscialiving.it/blog/[SLUG-ARTICOLO]/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="[TITOLO ARTICOLO] | Tuscia Living" />
+  <meta property="og:description" content="[OG DESCRIPTION — può essere più emotiva della meta description]" />
+  <meta property="og:url" content="https://tuscialiving.it/blog/[SLUG-ARTICOLO]/" />
+  <meta property="og:image" content="https://tuscialiving.it/assets/[IMMAGINE-1200x630].jpg" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="article:published_time" content="[YYYY-MM-DD]" />
+  <meta property="article:modified_time" content="[YYYY-MM-DD]" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+  <!-- Schema.org Article + FAQ (OBBLIGATORIO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "[TITOLO ARTICOLO]",
+        "description": "[META DESCRIPTION]",
+        "datePublished": "[YYYY-MM-DD]",
+        "dateModified": "[YYYY-MM-DD]",
+        "mainEntityOfPage": "https://tuscialiving.it/blog/[SLUG-ARTICOLO]/",
+        "image": "https://tuscialiving.it/assets/[IMMAGINE].jpg",
+        "author": {
+          "@type": "Organization",
+          "name": "Tuscia Living",
+          "url": "https://tuscialiving.it"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Tuscia Living",
+          "logo": { "@type": "ImageObject", "url": "https://tuscialiving.it/assets/logo.png" }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://tuscialiving.it/"},
+          {"@type":"ListItem","position":2,"name":"Blog","item":"https://tuscialiving.it/blog/"},
+          {"@type":"ListItem","position":3,"name":"[TITOLO BREVE]","item":"https://tuscialiving.it/blog/[SLUG]/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "[DOMANDA FAQ 1]",
+            "acceptedAnswer": { "@type": "Answer", "text": "[RISPOSTA 1]" }
+          },
+          {
+            "@type": "Question",
+            "name": "[DOMANDA FAQ 2]",
+            "acceptedAnswer": { "@type": "Answer", "text": "[RISPOSTA 2]" }
+          },
+          {
+            "@type": "Question",
+            "name": "[DOMANDA FAQ 3]",
+            "acceptedAnswer": { "@type": "Answer", "text": "[RISPOSTA 3]" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--verde:#2d5545;--verde-chiaro:#3a6b5a;--oro:#d4862e;--crema:#faf8f3;--testo:#1a1a1a;--grigio:#6b6b6b}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',system-ui,sans-serif;color:var(--testo);background:var(--crema);line-height:1.7}
+    a{color:var(--verde)}
+    a:hover{color:var(--verde-chiaro)}
+
+    /* HEADER */
+    header{background:var(--verde);color:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+    .header-inner{max-width:1100px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;text-decoration:none}
+    .logo span{color:#d4a96a;font-size:.75rem;font-weight:400;display:block;letter-spacing:.08em}
+    nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    nav a{color:rgba(255,255,255,.85);font-size:.82rem;padding:5px 10px;border-radius:4px;transition:background .2s;text-decoration:none}
+    nav a:hover{background:rgba(255,255,255,.15);color:#fff}
+    .nav-cta{background:var(--oro)!important;color:#fff!important;border-radius:20px!important;padding:5px 14px!important}
+
+    /* LAYOUT */
+    .article-wrapper{max-width:1100px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+    @media(max-width:800px){.article-wrapper{grid-template-columns:1fr}}
+
+    /* BREADCRUMB */
+    .breadcrumb{font-size:.78rem;color:var(--grigio);margin-bottom:24px}
+    .breadcrumb a{color:var(--grigio)}
+    .breadcrumb a:hover{color:var(--verde)}
+
+    /* ARTICOLO */
+    article .article-cat{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--oro);margin-bottom:10px}
+    article h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;color:var(--testo);line-height:1.15;margin-bottom:16px}
+    .article-meta{font-size:.8rem;color:var(--grigio);margin-bottom:28px;display:flex;gap:16px;flex-wrap:wrap}
+    .article-hero{width:100%;border-radius:10px;overflow:hidden;margin-bottom:32px}
+    .article-hero img{width:100%;height:360px;object-fit:cover;display:block}
+    @media(max-width:600px){.article-hero img{height:220px}}
+
+    /* BOX "IN SINTESI" */
+    .summary-box{background:#f0f7f4;border-left:4px solid var(--verde);padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:32px}
+    .summary-box h3{font-family:'Playfair Display',serif;color:var(--verde);margin-bottom:12px;font-size:1rem}
+    .summary-box ul{margin-left:18px}
+    .summary-box li{margin-bottom:6px;font-size:.9rem}
+
+    /* CORPO TESTO */
+    .article-body h2{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--verde);margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--oro)}
+    .article-body h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--verde-chiaro);margin:24px 0 10px}
+    .article-body p{margin-bottom:18px;font-size:.97rem}
+    .article-body ul,.article-body ol{margin:12px 0 18px 22px}
+    .article-body li{margin-bottom:8px;font-size:.97rem}
+    .article-body strong{color:#222}
+    .article-body blockquote{border-left:4px solid var(--oro);padding:12px 20px;margin:24px 0;background:#fff;border-radius:0 6px 6px 0;font-style:italic;color:#444}
+    .article-body .source{font-size:.78rem;color:#999;font-style:italic}
+
+    /* FAQ */
+    .faq-section{margin-top:40px}
+    .faq-section h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--verde);margin-bottom:20px;padding-bottom:8px;border-bottom:2px solid var(--oro)}
+    .faq-item{border-bottom:1px solid #e0e0e0;padding:16px 0}
+    .faq-item:last-child{border-bottom:none}
+    .faq-q{font-weight:600;color:var(--verde);margin-bottom:8px;font-size:.97rem}
+    .faq-a{color:#444;font-size:.92rem;line-height:1.7}
+
+    /* CTA BOX */
+    .cta-box{background:var(--verde);color:#fff;border-radius:10px;padding:28px;text-align:center;margin-top:40px}
+    .cta-box p{margin-bottom:16px;opacity:.9;font-size:.95rem}
+    .cta-btn{display:inline-block;padding:11px 26px;background:#fff;color:var(--verde);font-weight:700;border-radius:6px;font-size:.9rem;text-decoration:none;transition:background .2s}
+    .cta-btn:hover{background:#f5f0e8;color:var(--verde)}
+
+    /* SIDEBAR */
+    aside{position:sticky;top:80px}
+    .sidebar-card{background:#fff;border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .sidebar-card h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--verde);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #eee}
+    .sidebar-card ul{list-style:none}
+    .sidebar-card li{padding:6px 0;border-bottom:1px solid #f5f5f5;font-size:.85rem}
+    .sidebar-card li:last-child{border-bottom:none}
+    .sidebar-card a{color:var(--testo);font-size:.85rem}
+    .sidebar-card a:hover{color:var(--verde)}
+    .sidebar-cta{background:var(--verde);color:#fff;border-radius:10px;padding:20px;margin-bottom:20px;text-align:center}
+    .sidebar-cta h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:10px}
+    .sidebar-cta p{font-size:.82rem;opacity:.88;margin-bottom:14px}
+    .sidebar-cta a{display:block;background:#fff;color:var(--verde);padding:9px;border-radius:6px;font-weight:700;font-size:.85rem;text-decoration:none}
+
+    /* FOOTER */
+    footer{background:#1a1a1a;color:#999;padding:32px 20px;margin-top:60px;text-align:center;font-size:.82rem}
+    footer a{color:#bbb}
+    footer a:hover{color:#fff}
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tuscia Living <span>Residenza Nazareth · Viterbo</span></a>
+    <nav>
+      <a href="/#formule">Formule e prezzi</a>
+      <a href="/#struttura">La struttura</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contatti" class="nav-cta">Contattaci</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-wrapper">
+  <main>
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="/">Home</a> / <a href="/blog/">Blog</a> / [TITOLO BREVE]
+    </nav>
+
+    <article>
+      <div class="article-cat">[CATEGORIA — es. RSA e Alternative / La Tuscia / Per la Famiglia]</div>
+      <h1>[TITOLO H1 — keyword principale, max 60 caratteri]</h1>
+      <div class="article-meta">
+        <span>📅 [Data pubblicazione — es. 15 aprile 2026]</span>
+        <span>⏱️ [X min di lettura]</span>
+        <span>✍️ Tuscia Living</span>
+      </div>
+
+      <!-- IMMAGINE HERO — NO lazy (above the fold) -->
+      <div class="article-hero">
+        <img src="/assets/[IMMAGINE-ARTICOLO].jpg" alt="[ALT TEXT descrittivo con keyword]">
+      </div>
+
+      <!-- BOX "IN SINTESI" — OBBLIGATORIO -->
+      <div class="summary-box">
+        <h3>📌 In sintesi</h3>
+        <ul>
+          <li>[Punto chiave 1]</li>
+          <li>[Punto chiave 2]</li>
+          <li>[Punto chiave 3]</li>
+          <li>[Punto chiave 4]</li>
+          <li>[Punto chiave 5 — max]</li>
+        </ul>
+      </div>
+
+      <!-- CORPO ARTICOLO -->
+      <div class="article-body">
+
+        <!-- INTRODUZIONE: 150-250 parole, aggancia il problema reale nelle prime 2 righe -->
+        <p>[INTRODUZIONE — inizia con il problema reale del lettore, non con informazioni generali]</p>
+
+        <h2>[SEZIONE H2 — 1]</h2>
+        <p>[Testo...]</p>
+
+        <h2>[SEZIONE H2 — 2]</h2>
+        <p>[Testo...]</p>
+        <h3>[Sottosezione H3 — se necessario]</h3>
+        <p>[Testo...]</p>
+
+        <h2>[SEZIONE H2 — 3]</h2>
+        <p>[Testo...]</p>
+
+        <h2>[SEZIONE H2 — 4 — minimo per articoli satellite]</h2>
+        <p>[Testo...]</p>
+
+        <!-- SEZIONE FAQ — OBBLIGATORIA (min 3 domande) -->
+        <div class="faq-section">
+          <h2>Domande Frequenti</h2>
+          <div class="faq-item">
+            <div class="faq-q">[DOMANDA 1]</div>
+            <div class="faq-a">[RISPOSTA 1]</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">[DOMANDA 2]</div>
+            <div class="faq-a">[RISPOSTA 2]</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">[DOMANDA 3]</div>
+            <div class="faq-a">[RISPOSTA 3]</div>
+          </div>
+        </div>
+
+        <!-- CTA FINALE — UNA SOLA, scelta in base all'intent dell'articolo -->
+        <!-- CTA tipo 1 (esplorativo): -->
+        <div class="cta-box">
+          <p>[TESTO CTA — es. "Stai valutando opzioni per i tuoi genitori? Parliamo: nessun impegno, solo una conversazione."]</p>
+          <a href="/#contatti" class="cta-btn">[TESTO BOTTONE — es. "Scrivici su WhatsApp"]</a>
+        </div>
+
+      </div><!-- /article-body -->
+    </article>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar-cta">
+      <h3>Parliamo della tua situazione</h3>
+      <p>Nessun impegno. Solo una conversazione con chi capisce il problema.</p>
+      <a href="/#contatti">Contattaci →</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>Articoli correlati</h3>
+      <ul>
+        <!-- SOSTITUIRE con link reali agli articoli correlati -->
+        <li><a href="/blog/">[Articolo correlato 1]</a></li>
+        <li><a href="/blog/">[Articolo correlato 2]</a></li>
+        <li><a href="/blog/">[Articolo correlato 3]</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>Le nostre formule</h3>
+      <ul>
+        <li><a href="/#formule">Tuscia Discovery — €100/giorno</a></li>
+        <li><a href="/#formule">Winter Resident — da €2.250/mese</a></li>
+        <li><a href="/#formule">Tuscia Home — da €2.000/mese</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p><a href="/">tuscialiving.it</a> · <a href="/blog/">Blog</a> · <a href="/privacy/">Privacy</a> · <a href="/cookie-policy/">Cookie Policy</a></p>
+  <p style="margin-top:8px">Tuscia Living — Residenza Nazareth · Via San Tommaso 26/30, Viterbo · <a href="tel:+390761264612">+39 0761 1264612</a></p>
+</footer>
+</body>
+</html>
