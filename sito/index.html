@@ -825,6 +825,8 @@
     });
     // Initialize Lucide icons
     lucide.createIcons();
+    // Re-init dopo animazioni
+    setTimeout(() => lucide.createIcons(), 500);
     // Lightbox for gallery
     document.querySelectorAll('#gallery a').forEach(a => {
       a.addEventListener('click', function(e) {
