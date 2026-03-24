@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
 
-Sitemap: https://tuscialiving.it/sitemap.xml
+Sitemap: https://www.tuscialiving.it/sitemap.xml

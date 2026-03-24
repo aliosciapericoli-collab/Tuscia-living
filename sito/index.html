@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuscia Living — Il Primo Long Stay Hotel per Senior Attivi</title>
-  <meta name="description" content="Il primo Long Stay Hotel in Italia per senior attivi. Camere, pensione completa e attività da €2.000/mese nel centro storico di Viterbo. Scopri le formule." />
+  <title>Tuscia Living — Il Primo Long Stay Hotel per Senior Attivi | Viterbo</title>
+  <meta name="description" content="Tuscia Living: il primo hotel in Italia per soggiorni lunghi dedicato a senior attivi e autosufficienti. Nel centro storico di Viterbo, pensione completa, attività quotidiane, comunità. Da €2.000/mese tutto incluso." />
   <link rel="icon" type="image/png" href="assets/logo.png">
   <!-- CANONICAL -->
-  <link rel="canonical" href="https://tuscialiving.it/" />
+  <link rel="canonical" href="https://www.tuscialiving.it/" />
+  <link rel="alternate" hreflang="it" href="https://www.tuscialiving.it/" />
+  <link rel="alternate" hreflang="en" href="https://www.tuscialiving.it/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.tuscialiving.it/" />
 
   <!-- META DESCRIPTION MIGLIORATA -->
   <!-- (sostituisce quella nel tag originale sopra) -->
@@ -22,18 +25,20 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Tuscia Living — Il Primo Long Stay Hotel per Senior Attivi" />
   <meta property="og:description" content="Vivi Viterbo, non invecchiare. Camere con pensione completa, attività e comunità per senior attivi da €2.000/mese. Nel cuore medievale della Tuscia." />
-  <meta property="og:url" content="https://tuscialiving.it/" />
+  <meta property="og:url" content="https://www.tuscialiving.it/" />
   <meta property="og:site_name" content="Tuscia Living" />
-  <meta property="og:image" content="https://tuscialiving.it/assets/hero-facciata.png" />
+  <meta property="og:image" content="https://www.tuscialiving.it/assets/hero-facciata.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:site_name" content="Tuscia Living" />
 
   <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Tuscia Living — Long Stay Hotel per Senior Attivi a Viterbo" />
   <meta name="twitter:description" content="Il primo Long Stay Hotel in Italia per senior attivi. Da €2.000/mese tutto incluso nel centro storico di Viterbo." />
-  <meta name="twitter:image" content="https://tuscialiving.it/assets/hero-facciata.png" />
+  <meta name="twitter:image" content="https://www.tuscialiving.it/assets/hero-facciata.png" />
 
   <!-- GEO TAG -->
   <meta name="geo.region" content="IT-VT" />
@@ -43,6 +48,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.451.0/lucide.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preload" href="assets/hero-facciata.webp" as="image" type="image/webp" />
   <link rel="preload" href="assets/hero-facciata.png" as="image" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,10 +59,10 @@
    "@graph": [
    {
    "@type": "Hotel",
-   "@id": "https://tuscialiving.it/#hotel",
+   "@id": "https://www.tuscialiving.it/#hotel",
    "name": "Tuscia Living — Residenza Nazareth",
    "description": "Il primo Long Stay Hotel in Italia per senior attivi. Camere con pensione completa, attività e comunità nel centro storico di Viterbo.",
-   "url": "https://tuscialiving.it",
+   "url": "https://www.tuscialiving.it",
    "telephone": "+390761264612",
    "email": "info@tuscialiving.it",
    "address": {
@@ -93,23 +99,38 @@
    ],
    "numberOfRooms": 47,
    "checkinTime": "24H",
-   "image": "https://tuscialiving.it/assets/hero-facciata.png",
-   "priceRange": "€2.000 - €3.000/mese"
+   "image": "https://www.tuscialiving.it/assets/hero-facciata.png",
+   "priceRange": "€2.000 - €3.000/mese",
+   "currenciesAccepted": "EUR",
+   "paymentAccepted": "Bonifico bancario, Carta di credito",
+   "petsAllowed": true,
+   "checkinTime": "15:00",
+   "checkoutTime": "10:00",
+   "availableLanguage": ["Italian", "English"],
+   "sameAs": [
+     "https://www.facebook.com/tuscialiving",
+     "https://www.instagram.com/tuscialiving"
+   ],
+   "parentOrganization": {
+     "@type": "Organization",
+     "name": "Domus Heritage SRL",
+     "taxID": "IT04754210401"
+   }
    },
    {
    "@type": "WebSite",
-   "@id": "https://tuscialiving.it/#website",
-   "url": "https://tuscialiving.it",
+   "@id": "https://www.tuscialiving.it/#website",
+   "url": "https://www.tuscialiving.it",
    "name": "Tuscia Living",
    "description": "Il primo Long Stay Hotel per senior attivi in Italia",
    "publisher": {
-   "@id": "https://tuscialiving.it/#hotel"
+   "@id": "https://www.tuscialiving.it/#hotel"
    },
    "inLanguage": "it-IT"
    },
    {
    "@type": "FAQPage",
-   "@id": "https://tuscialiving.it/#faq",
+   "@id": "https://www.tuscialiving.it/#faq",
    "mainEntity": [
    {
    "@type": "Question",
@@ -162,7 +183,7 @@
    },
    {
    "@type": "Offer",
-   "@id": "https://tuscialiving.it/#offer-discovery",
+   "@id": "https://www.tuscialiving.it/#offer-discovery",
    "name": "Tuscia Discovery",
    "description": "Soggiorno breve da 1 a 4 settimane con pensione completa e attività",
    "price": "100",
@@ -177,7 +198,7 @@
    },
    {
    "@type": "Offer",
-   "@id": "https://tuscialiving.it/#offer-winter",
+   "@id": "https://www.tuscialiving.it/#offer-winter",
    "name": "Winter Resident",
    "description": "Soggiorno da 1 a 6 mesi con camera singola, pensione completa e Club attività",
    "price": "2600",
@@ -192,7 +213,7 @@
    },
    {
    "@type": "Offer",
-   "@id": "https://tuscialiving.it/#offer-home",
+   "@id": "https://www.tuscialiving.it/#offer-home",
    "name": "Tuscia Home",
    "description": "Residenza stabile da 6 a 12 mesi rinnovabile con tutti i servizi inclusi",
    "price": "2350",
@@ -291,7 +312,7 @@
   <!-- HERO -->
   <section class="relative min-h-screen flex items-center hero-section overflow-hidden">
     <div class="absolute inset-0">
-      <img src="assets/hero-facciata.png" alt="Residenza Nazareth - Tuscia Living" class="w-full h-full object-cover hero-img">
+      <img src="assets/hero-facciata.png" alt="Tuscia Living Residenza Nazareth — hotel per senior attivi nel quartiere medievale San Pellegrino, Viterbo" class="w-full h-full object-cover hero-img">
       <div class="hero-gradient absolute inset-0"></div>
     </div>
 
@@ -500,39 +521,39 @@
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 fade-in">
         <!-- IMMOBILE: Ingresso Storico, Facciata, Lounge, Ristorante -->
         <a href="assets/gallery-ingresso-storico.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-ingresso-storico.png" alt="Ingresso Storico" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-ingresso-storico.png" alt="Ingresso storico Residenza Nazareth Viterbo — torri medievali XIII secolo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Ingresso Storico</span></div>
         </a>
         <a href="assets/gallery-facciata.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-facciata.png" alt="Facciata" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-facciata.png" alt="Facciata Residenza Nazareth Viterbo — long stay hotel per senior attivi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Facciata</span></div>
         </a>
         <a href="assets/gallery-ingresso.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-ingresso.png" alt="Reception" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-ingresso.png" alt="Reception Tuscia Living — accoglienza 24h per residenti senior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Reception</span></div>
         </a>
         <a href="assets/gallery-lounge.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-lounge.png" alt="Lounge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-lounge.png" alt="Sala lounge Tuscia Living — area relax e socializzazione per ospiti" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Lounge</span></div>
         </a>
         <!-- CAPPELLA / CHIESA -->
         <a href="assets/gallery-cappella2.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-cappella2.png" alt="Cappella" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-cappella2.png" alt="Cappella consacrata Residenza Nazareth — eventi e cerimonie" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Cappella</span></div>
         </a>
 
         <!-- SALA CINEMA / CONFERENZE -->
         <a href="assets/gallery-cinema.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-cinema.png" alt="Sala Cinema" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-cinema.png" alt="Sala cinema e eventi — attività Club Tuscia Living" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Sala Cinema</span></div>
         </a>
         <a href="assets/gallery-sala-meeting.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-sala-meeting.png" alt="Sala Conferenze" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-sala-meeting.png" alt="Sala conferenze Tuscia Living — spazi comuni per residenti senior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Sala Conferenze</span></div>
         </a>
         <!-- RISTORANTE / SALOTTINO -->
         <a href="assets/gallery-ristorante.png" class="group relative overflow-hidden rounded-xl aspect-square">
-          <img loading="lazy" src="assets/gallery-ristorante.png" alt="Ristorante" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <img loading="lazy" src="assets/gallery-ristorante.png" alt="Ristorante Tuscia Living — pensione completa per residenti senior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-end"><span class="text-white font-medium p-3 opacity-0 group-hover:opacity-100 transition">Ristorante</span></div>
         </a>
         <a href="assets/gallery-salottino.png" class="group relative overflow-hidden rounded-xl aspect-square">
@@ -592,7 +613,7 @@
           </div>
         </div>
         <div class="card-hover bg-white rounded-2xl overflow-hidden shadow fade-in">
-          <img loading="lazy" src="assets/sala-cinema.png" alt="Sala Cinema" class="w-full h-48 object-cover">
+          <img loading="lazy" src="assets/sala-cinema.png" alt="Sala cinema e eventi — attività Club Tuscia Living" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="font-serif text-lg font-bold text-accent-800">Serate cinema/musica</h3>
             <p class="text-gray-500 text-sm mt-1">E giochi di società</p>
@@ -761,7 +782,7 @@
                 <textarea id="messaggio" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-accent-500 focus:border-transparent outline-none"></textarea>
               </div>
               <input type="hidden" name="_subject" value="Nuova richiesta da tuscialiving.it">
-              <input type="hidden" name="_next" value="https://tuscialiving.it/#contatti">
+              <input type="hidden" name="_next" value="https://www.tuscialiving.it/#contatti">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_captcha" value="false">
               <button type="submit" class="w-full bg-accent-600 text-white py-3 rounded-full font-semibold hover:bg-accent-700 transition">Invia richiesta</button>
@@ -773,6 +794,50 @@
   </section>
 
   <!-- FOOTER -->
+
+  <!-- BLOG PREVIEW — SEO Internal Linking -->
+  <section id="blog-preview" class="py-20 bg-accent-50" style="background:#f0f7f4">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-sm font-semibold uppercase tracking-widest mb-3" style="color:#d4862e">Risorse gratuite</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4" style="color:#2d5545">Guide per famiglie e senior</h2>
+        <p class="text-lg max-w-2xl mx-auto" style="color:#4a6b5a">Confronti onesti, costi reali, storie vere. Scritte per aiutare, non per vendere.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <img src="assets/cover-residenza.jpg" alt="RSA o alternativa per anziani autosufficienti" class="w-full h-48 object-cover" loading="lazy" width="400" height="192">
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#d4862e">Guida completa</p>
+            <h3 class="font-serif text-xl font-bold mb-3" style="color:#2d5545">RSA o Alternativa? La guida 2026 per anziani autosufficienti</h3>
+            <p class="text-sm mb-4" style="color:#6b6b6b">Confronto onesto tra RSA, badante, long-stay hotel e cohousing. Con costi reali e limiti di ogni soluzione.</p>
+            <a href="/blog/rsa-alternativa-anziani-autosufficienti/" class="text-sm font-semibold" style="color:#d4862e">Leggi la guida →</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <img src="assets/cover-residenza.jpg" alt="Costi RSA Lazio 2026 — rette e alternative" class="w-full h-48 object-cover" loading="lazy" width="400" height="192">
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#d4862e">Dati aggiornati</p>
+            <h3 class="font-serif text-xl font-bold mb-3" style="color:#2d5545">Quanto costa una RSA nel Lazio nel 2026</h3>
+            <p class="text-sm mb-4" style="color:#6b6b6b">Rette da €1.800 a €4.500/mese, liste d'attesa fino a 2 anni. I dati che nessuno pubblica chiaramente.</p>
+            <a href="/blog/quanto-costa-rsa-lazio-2026/" class="text-sm font-semibold" style="color:#d4862e">Leggi la guida →</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <img src="assets/blog-senior-felici.jpg" alt="Senior attivi — la terza età dopo i 65 anni" class="w-full h-48 object-cover" loading="lazy" width="400" height="192">
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#d4862e">Storie</p>
+            <h3 class="font-serif text-xl font-bold mb-3" style="color:#2d5545">Perché i migliori anni potrebbero essere dopo i 65</h3>
+            <p class="text-sm mb-4" style="color:#6b6b6b">La scienza lo conferma: la felicità risale dopo i 65. Libertà, relazioni più profonde, nuovi inizi.</p>
+            <a href="/blog/migliori-anni-dopo-sessantacinque/" class="text-sm font-semibold" style="color:#d4862e">Leggi l'articolo →</a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-10">
+        <a href="/blog/" class="inline-block px-8 py-3 rounded-full font-semibold text-sm" style="background:#2d5545;color:#fff">Vai al blog completo →</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="bg-accent-900 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8">
