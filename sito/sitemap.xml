@@ -1,89 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://www.tuscialiving.it/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/rsa-alternativa-anziani-autosufficienti/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/badante-o-struttura-confronto/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/quanto-costa-rsa-lazio-2026/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/segnali-genitore-anziano-solo/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/migliori-anni-dopo-sessantacinque/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/vivere-in-hotel-tutto-lanno/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/blog/terza-eta-attiva-curiosa-libera/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/en/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/privacy/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tuscialiving.it/cookie-policy/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url><loc>https://www.tuscialiving.it/</loc><lastmod>2026-03-20</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/</loc><lastmod>2026-03-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/rsa-alternativa-anziani-autosufficienti/</loc><lastmod>2026-03-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/badante-o-struttura-confronto/</loc><lastmod>2026-03-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/quanto-costa-rsa-lazio-2026/</loc><lastmod>2026-03-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/segnali-genitore-anziano-solo/</loc><lastmod>2026-03-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/migliori-anni-dopo-sessantacinque/</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/vivere-in-hotel-tutto-lanno/</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+ <url><loc>https://www.tuscialiving.it/blog/terza-eta-attiva-curiosa-libera/</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+ <url><loc>https://www.tuscialiving.it/en/</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+ <url><loc>https://www.tuscialiving.it/privacy/</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+ <url><loc>https://www.tuscialiving.it/cookie-policy/</loc><lastmod>2026-03-01</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>
