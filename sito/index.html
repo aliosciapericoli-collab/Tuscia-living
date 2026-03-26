@@ -57,177 +57,198 @@
   {
    "@context": "https://schema.org",
    "@graph": [
-   {
-   "@type": "Hotel",
-   "@id": "https://www.tuscialiving.it/#hotel",
-   "name": "Tuscia Living — Residenza Nazareth",
-   "description": "Il primo Long Stay Hotel in Italia per senior attivi. Camere con pensione completa, attività e comunità nel centro storico di Viterbo.",
-   "url": "https://www.tuscialiving.it",
-   "telephone": "+390761564612",
-   "email": "info@tuscialiving.it",
-   "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "Via San Tommaso 26/30",
-   "addressLocality": "Viterbo",
-   "postalCode": "01100",
-   "addressRegion": "VT",
-   "addressCountry": "IT"
-   },
-   "geo": {
-   "@type": "GeoCoordinates",
-   "latitude": 42.4168,
-   "longitude": 12.1048
-   },
-   "starRating": {
-   "@type": "Rating",
-   "ratingValue": "3"
-   },
-   "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "8.2",
-   "bestRating": "10",
-   "worstRating": "1",
-   "ratingCount": "150"
-   },
-   "amenityFeature": [
-   {"@type": "LocationFeatureSpecification", "name": "Pensione completa", "value": true},
-   {"@type": "LocationFeatureSpecification", "name": "Parcheggio gratuito", "value": true},
-   {"@type": "LocationFeatureSpecification", "name": "WiFi gratuito", "value": true},
-   {"@type": "LocationFeatureSpecification", "name": "Navetta terme", "value": true},
-   {"@type": "LocationFeatureSpecification", "name": "Bike Hotel", "value": true},
-   {"@type": "LocationFeatureSpecification", "name": "Club attività senior", "value": true}
-   ],
-   "numberOfRooms": 47,
-   "checkinTime": "24H",
-   "image": "https://www.tuscialiving.it/assets/hero-facciata.png",
-   "priceRange": "€2.000 - €2.600/mese",
-   "currenciesAccepted": "EUR",
-   "paymentAccepted": "Bonifico bancario, Carta di credito",
-   "petsAllowed": true,
-   "checkinTime": "15:00",
-   "checkoutTime": "10:00",
-   "availableLanguage": ["Italian", "English"],
-   "sameAs": [
-     "https://www.facebook.com/tuscialiving",
-     "https://www.instagram.com/tuscialiving"
-   ],
-   "parentOrganization": {
-     "@type": "Organization",
-     "name": "Domus Heritage SRL",
-     "taxID": "IT04754210401"
-   }
-   },
-   {
-   "@type": "WebSite",
-   "@id": "https://www.tuscialiving.it/#website",
-   "url": "https://www.tuscialiving.it",
-   "name": "Tuscia Living",
-   "description": "Il primo Long Stay Hotel per senior attivi in Italia",
-   "publisher": {
-   "@id": "https://www.tuscialiving.it/#hotel"
-   },
-   "inLanguage": "it-IT"
-   },
-   {
-   "@type": "FAQPage",
-   "@id": "https://www.tuscialiving.it/#faq",
-   "mainEntity": [
-   {
-   "@type": "Question",
-   "name": "Quanto costa vivere in hotel da anziani a Tuscia Living?",
-   "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Le formule partono da €2.000/mese tutto incluso (camera, pensione completa, pulizie, WiFi, parcheggio, Club attività). La formula Discovery per soggiorni brevi costa €100/giorno."
-   }
-   },
-   {
-   "@type": "Question",
-   "name": "A chi è rivolto Tuscia Living?",
-   "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "A senior attivi e autosufficienti che vogliono vivere in hotel tutto l'anno o per lunghi periodi. Nessun requisito sanitario, nessuna cartella clinica: sei un ospite, con la libertà di un hotel."
-   }
-   },
-   {
-   "@type": "Question",
-   "name": "Si può provare prima di impegnarsi a lungo termine?",
-   "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Sì. La formula Tuscia Discovery permette soggiorni da 1 a 4 settimane a €100/giorno con pensione completa e tutte le attività incluse."
-   }
-   },
-   {
-   "@type": "Question",
-   "name": "Dove si trova Tuscia Living?",
-   "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Nel quartiere medievale di San Pellegrino, nel centro storico di Viterbo. A 1h15 da Roma, 5 minuti dalle Terme dei Papi, 30 minuti dal Lago di Bolsena."
-   }
-   },
-   {
-   "@type": "Question",
-   "name": "I familiari possono venire a trovare i residenti?",
-   "acceptedAnswer": {"@type": "Answer",
-   "text": "Assolutamente sì. Con la formula Tuscia Home, i familiari hanno 14 giorni/anno di ospitalità gratuita. Inoltre è disponibile un Portale Famiglia con aggiornamenti online e supporto per videochiamate."
-   }
-   },
-   {
-   "@type": "Question",
-   "name": "Cosa è incluso nel prezzo mensile?",
-   "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Camera con bagno privato, pensione completa, pulizia camera 2 volte a settimana, WiFi, parcheggio gratuito, Club Tuscia Living con ginnastica dolce, escursioni, serate cinema, aperitivo sociale, corsi di cucina e arte."
-   }
-   }
+      {
+         "@type": "Hotel",
+         "@id": "https://www.tuscialiving.it/#hotel",
+         "name": "Tuscia Living — Residenza Nazareth",
+         "description": "Il primo Long Stay Hotel in Italia per senior attivi. Camere con pensione completa, attività e comunità nel centro storico di Viterbo.",
+         "url": "https://www.tuscialiving.it",
+         "telephone": "+390761564612",
+         "email": "info@tuscialiving.it",
+         "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via San Tommaso 26/30",
+            "addressLocality": "Viterbo",
+            "postalCode": "01100",
+            "addressRegion": "VT",
+            "addressCountry": "IT"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.4168,
+            "longitude": 12.1048
+         },
+         "starRating": {
+            "@type": "Rating",
+            "ratingValue": "3"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "8.2",
+            "bestRating": "10",
+            "worstRating": "1",
+            "ratingCount": "150"
+         },
+         "amenityFeature": [
+            {
+               "@type": "LocationFeatureSpecification",
+               "name": "Pensione completa",
+               "value": true
+            },
+            {
+               "@type": "LocationFeatureSpecification",
+               "name": "Parcheggio gratuito",
+               "value": true
+            },
+            {
+               "@type": "LocationFeatureSpecification",
+               "name": "WiFi gratuito",
+               "value": true
+            },
+            {
+               "@type": "LocationFeatureSpecification",
+               "name": "Navetta terme",
+               "value": true
+            },
+            {
+               "@type": "LocationFeatureSpecification",
+               "name": "Bike Hotel",
+               "value": true
+            },
+            {
+               "@type": "LocationFeatureSpecification",
+               "name": "Club attività senior",
+               "value": true
+            }
+         ],
+         "numberOfRooms": 47,
+         "checkinTime": "15:00",
+         "image": "https://www.tuscialiving.it/assets/hero-facciata.png",
+         "priceRange": "€2.000 - €2.600/mese",
+         "currenciesAccepted": "EUR",
+         "paymentAccepted": "Bonifico bancario, Carta di credito",
+         "petsAllowed": true,
+         "checkoutTime": "10:00",
+         "availableLanguage": [
+            "Italian",
+            "English"
+         ],
+         "sameAs": [
+            "https://www.facebook.com/tuscialiving",
+            "https://www.instagram.com/tuscialiving"
+         ],
+         "parentOrganization": {
+            "@type": "Organization",
+            "name": "Domus Heritage SRL",
+            "taxID": "IT04754210401"
+         }
+      },
+      {
+         "@type": "WebSite",
+         "@id": "https://www.tuscialiving.it/#website",
+         "url": "https://www.tuscialiving.it",
+         "name": "Tuscia Living",
+         "description": "Il primo Long Stay Hotel per senior attivi in Italia",
+         "publisher": {
+            "@id": "https://www.tuscialiving.it/#hotel"
+         },
+         "inLanguage": "it-IT"
+      },
+      {
+         "@type": "FAQPage",
+         "@id": "https://www.tuscialiving.it/#faq",
+         "mainEntity": [
+            {
+               "@type": "Question",
+               "name": "Quanto costa vivere in hotel da anziani a Tuscia Living?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le formule partono da €2.000/mese tutto incluso (camera, pensione completa, pulizie, WiFi, parcheggio, Club attività). La formula Discovery per soggiorni brevi costa €100/giorno."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "A chi è rivolto Tuscia Living?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A senior attivi e autosufficienti che vogliono vivere in hotel tutto l'anno o per lunghi periodi. Nessun requisito sanitario, nessuna cartella clinica: sei un ospite, con la libertà di un hotel."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "Si può provare prima di impegnarsi a lungo termine?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sì. La formula Tuscia Discovery permette soggiorni da 1 a 4 settimane a €100/giorno con pensione completa e tutte le attività incluse."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "Dove si trova Tuscia Living?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nel quartiere medievale di San Pellegrino, nel centro storico di Viterbo. A 1h15 da Roma, 5 minuti dalle Terme dei Papi, 30 minuti dal Lago di Bolsena."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "I familiari possono venire a trovare i residenti?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Assolutamente sì. Con la formula Tuscia Home, i familiari hanno 14 giorni/anno di ospitalità gratuita. Inoltre è disponibile un Portale Famiglia con aggiornamenti online e supporto per videochiamate."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "Cosa è incluso nel prezzo mensile?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Camera con bagno privato, pensione completa, pulizia camera 2 volte a settimana, WiFi, parcheggio gratuito, Club Tuscia Living con ginnastica dolce, escursioni, serate cinema, aperitivo sociale, corsi di cucina e arte."
+               }
+            }
+         ]
+      },
+      {
+         "@type": "Offer",
+         "@id": "https://www.tuscialiving.it/#offer-discovery",
+         "name": "Tuscia Discovery",
+         "description": "Soggiorno breve da 1 a 4 settimane con pensione completa e attività",
+         "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "100",
+            "priceCurrency": "EUR",
+            "unitText": "giorno"
+         },
+         "availability": "https://schema.org/InStock"
+      },
+      {
+         "@type": "Offer",
+         "@id": "https://www.tuscialiving.it/#offer-winter",
+         "name": "Winter Resident",
+         "description": "Soggiorno da 1 a 6 mesi con camera singola, pensione completa e Club attività",
+         "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "2600",
+            "priceCurrency": "EUR",
+            "unitText": "mese"
+         },
+         "availability": "https://schema.org/InStock"
+      },
+      {
+         "@type": "Offer",
+         "@id": "https://www.tuscialiving.it/#offer-home",
+         "name": "Tuscia Home",
+         "description": "Residenza stabile da 6 a 12 mesi rinnovabile con tutti i servizi inclusi",
+         "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "2350",
+            "priceCurrency": "EUR",
+            "unitText": "mese"
+         },
+         "availability": "https://schema.org/InStock"
+      }
    ]
-   },
-   {
-   "@type": "Offer",
-   "@id": "https://www.tuscialiving.it/#offer-discovery",
-   "name": "Tuscia Discovery",
-   "description": "Soggiorno breve da 1 a 4 settimane con pensione completa e attività",
-   "price": "100",
-   "priceCurrency": "EUR",
-   "priceSpecification": {
-   "@type": "UnitPriceSpecification",
-   "price": "100",
-   "priceCurrency": "EUR",
-   "unitText": "giorno"
-   },
-   "availability": "https://schema.org/InStock"
-   },
-   {
-   "@type": "Offer",
-   "@id": "https://www.tuscialiving.it/#offer-winter",
-   "name": "Winter Resident",
-   "description": "Soggiorno da 1 a 6 mesi con camera singola, pensione completa e Club attività",
-   "price": "2600",
-   "priceCurrency": "EUR",
-   "priceSpecification": {
-   "@type": "UnitPriceSpecification",
-   "price": "2600",
-   "priceCurrency": "EUR",
-   "unitText": "mese"
-   },
-   "availability": "https://schema.org/InStock"
-   },
-   {
-   "@type": "Offer",
-   "@id": "https://www.tuscialiving.it/#offer-home",
-   "name": "Tuscia Home",
-   "description": "Residenza stabile da 6 a 12 mesi rinnovabile con tutti i servizi inclusi",
-   "price": "2350",
-   "priceCurrency": "EUR",
-   "priceSpecification": {
-   "@type": "UnitPriceSpecification",
-   "price": "2350",
-   "priceCurrency": "EUR",
-   "unitText": "mese"
-   },
-   "availability": "https://schema.org/InStock"
-   }
-   ]
-  }
+}
   </script>
   <script>
     tailwind.config = {
